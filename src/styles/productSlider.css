@@ -1,0 +1,10 @@
+#productSlider {
+    overflow: hidden;
+}
+
+.slick-slide {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
