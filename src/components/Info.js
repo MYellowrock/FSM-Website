@@ -3,7 +3,7 @@ import company from "../image/company.png";
 
 function Info() {
   return (
-    <div id="info" className="flex justify-center items-center h-screen bg-gray-100 mt-12">
+    <div id="info-section" className="flex justify-center items-center h-screen bg-gray-100 mt-12">
       <div id="companyInfo" className="flex flex-col items-center">
         <div className="companyImage">
           <img src={company} alt="company" width={198} />

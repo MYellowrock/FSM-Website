@@ -1,6 +1,8 @@
+import { AiOutlineCopyright } from "react-icons/ai";
+
 function Footer() {
   return (
-    <div id="footer">
+    <div id="contact-section">
       <div className="info-section my-36 flex justify-around">
         <div className="destek">
             <h1 className="text-xl font-semibold">Destek</h1> <hr /> <br />
@@ -32,6 +34,19 @@ function Footer() {
                 <a className="mb-1 hover:text-fsm-red" href="/"> 0 (312) 387 01 09</a> <br />
                 <label>Fax:</label>
                 <a className="mb-1 hover:text-fsm-red" href="/"> 0 (312) 999 81 97</a> <br />
+        </div>
+      </div>
+      <hr/>
+      <div id="last-part" className="py-6 flex flex-col items-center justify-between">
+        <div id="copyright">
+          <p>Copyright <AiOutlineCopyright className="inline-block"/> 2023 Bilgi Teknolojileri</p>
+        </div>
+        <div>
+          <a href="/" className="inline-block mr-2 hover:text-fsm-red">Gizlilik Politikası</a>
+          <p className="inline-block mr-2 text-2xl font-semibold">-</p> 
+          <a href="/" className="inline-block mr-2 hover:text-fsm-red">Teslimat ve İade Koşulları</a>
+          <p className="inline-block mr-2 text-2xl font-semibold">-</p>
+          <a href="/" className="inline-block hover:text-fsm-red">Mesafeli Satış Sözleşmesi</a>
         </div>
       </div>
     </div>

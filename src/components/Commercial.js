@@ -4,7 +4,7 @@ import "../styles/commercial.css";
 function Commercial() {
   return (
     <div>
-      <div className="component-container mt-12">
+      <div className="component-container mt-12 z-10">
         <img
           src={electronicCard}
           alt="electronicCard"
