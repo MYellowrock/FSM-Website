@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import logo from "../image/logo1.png";
 import "../styles/nav.css";
 import fsmLogo from "../image/fsmLogo.png";
-import backgroundImage from "../image/navbargif1.gif";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { Link } from "react-router-dom";
 
@@ -115,14 +114,8 @@ const Nav = () => {
     setActiveDropdown(null);
   };
 
-  const backgroundStyles = {
-    backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  };
-
   return (
-    <nav id="nav-bar" style={backgroundStyles}>
+    <nav id="nav-bar">
       <div className="logoPlusNavbar flex items-center bg-white fixed w-full border-solid border-2 rounded-lg z-20">
         <div id="logo" className="flex items-center justify-center mr-24">
           <a href="/">
@@ -151,36 +144,66 @@ const Nav = () => {
                   activeDropdown === 0 ? "" : "hidden"
                 }`}
               >
-                <a
-                  href="/solution-1"
+                <Link
+                  to="/smart-stop"
                   className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
                 >
-                  Akıllı Kent Çözümleri
-                </a>
-                <a
-                  href="/solution-2"
+                  Akıllı Durak Çözümleri
+                </Link>
+                <Link
+                  to="/smart-city"
                   className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
                 >
-                  Medikal Çözümler
-                </a>
-                <a
-                  href="/solution-3"
+                  Akıllı Kent Çözümler
+                </Link>
+                <Link
+                  to="/videowall"
                   className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
                 >
-                  Simülasyon Çözümleri
-                </a>
-                <a
-                  href="/solution-3"
+                  Videowall Ekran
+                </Link>
+                <Link
+                  to="/electronic-payment"
                   className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
                 >
-                  Radar ve Çevre Güvenlik Sistemler
-                </a>
-                <a
-                  href="/solution-3"
+                  Elektronik Ücret Toplama
+                </Link>
+                <Link
+                  to="/highway"
                   className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
                 >
-                  Savunma Sanayi Çözümleri
-                </a>
+                  Otoyol Sistemleri
+                </Link>
+                <Link
+                  to="/simulator"
+                  className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                >
+                  Simülatörler
+                </Link>
+                <Link
+                  to="/security"
+                  className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                >
+                  Güvenlik Çözümleri
+                </Link>
+                <Link
+                  to="/mobile-hospital"
+                  className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                >
+                  Mobil Hastane
+                </Link>
+                <Link
+                  to="/datacenter"
+                  className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                >
+                  Datacenter
+                </Link>
+                <Link
+                  to="/cable"
+                  className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                >
+                  Yapısal Kablolama
+                </Link>
               </div>
             </li>
             <li className="p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">

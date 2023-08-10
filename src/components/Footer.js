@@ -1,28 +1,67 @@
 import { AiOutlineCopyright } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Footer() {
+
+  const scrollToInfo = (e) => {
+    e.preventDefault();
+    const infoSection = document.getElementById("info-section");
+    if (infoSection) {
+      const targetOffset = infoSection.offsetTop;
+      const initialPosition = window.scrollY;
+      const distance = Math.abs(targetOffset - initialPosition);
+      const speed = 1.2;
+      const duration = distance / speed;
+
+      const startTime = performance.now();
+      const endTime = startTime + duration;
+
+      function step() {
+        const currentTime = performance.now();
+        const progress = (currentTime - startTime) / duration;
+
+        if (currentTime >= endTime) {
+          window.scrollTo(0, targetOffset);
+          return;
+        }
+
+        const easeProgress = 0.5 - Math.cos(progress * Math.PI) / 2;
+        const newPosition =
+          initialPosition + (targetOffset - initialPosition) * easeProgress;
+        window.scrollTo(0, newPosition);
+        requestAnimationFrame(step);
+      }
+
+      requestAnimationFrame(step);
+    }
+  };
+
   return (
     <div id="contact-section">
-      <div className="info-section my-36 flex justify-around">
+      <div className="info-section my-16 flex justify-around">
         <div className="destek">
             <h1 className="text-xl font-semibold">Destek</h1> <hr /> <br />
           <ul>
-            <li className="mb-2 hover:text-fsm-red"><a href="/">Gizlilik Politikası</a></li>
-            <li className="mb-2 hover:text-fsm-red"><a href="/">Teslimat ve İade Koşulları</a></li>
-            <li className="mb-2 hover:text-fsm-red"><a href="/">Mesafeli Satış Sözleşmesi</a></li>
-            <li className="mb-2 hover:text-fsm-red"><a href="/">Hakkımızda</a></li>
-            <li className="mb-2 hover:text-fsm-red"><a href="/">İletişim</a></li>
+            <li className="mb-2 hover:text-fsm-red"><Link to="/security-policy">Gizlilik Politikası</Link></li>
+            <li className="mb-2 hover:text-fsm-red"><Link to="/delivery-and-return">Teslimat ve İade Koşulları</Link></li>
+            <li className="mb-2 hover:text-fsm-red"><Link to="/sales-contract">Mesafeli Satış Sözleşmesi</Link></li>
+            <li className="mb-2 hover:text-fsm-red"><a href="/" onClick={scrollToInfo} >Hakkımızda</a></li>
+            <li className="mb-2 hover:text-fsm-red"><Link to="/communication">İletişim</Link></li>
           </ul>
         </div>
         <div className="çözümlerimiz">
             <h1 className="text-xl font-semibold">Çözümlerimiz</h1> <hr /> <br />
             <ul>
-                <li className="mb-2 hover:text-fsm-red"><a href="/">Akıllı Kent Çözümleri</a></li>
-                <li className="mb-2 hover:text-fsm-red"><a href="/">Medikal Çözümler</a></li>
-                <li className="mb-2 hover:text-fsm-red"><a href="/">Endüstriyel Çözümler</a></li>
-                <li className="mb-2 hover:text-fsm-red"><a href="/">Simülasyon Çözümleri</a></li>
-                <li className="mb-2 hover:text-fsm-red"><a href="/">Radar ve Çevre Güvenlik Çözümleri</a></li>
-                <li className="mb-2 hover:text-fsm-red"><a href="/">Savunma Sanayi Çözümleri</a></li>
+                <li className="mb-2 hover:text-fsm-red"><Link to="/smart-stop">Akıllı Durak Çözümleri</Link></li>
+                <li className="mb-2 hover:text-fsm-red"><Link to="/smart-city">Akıllı Kent Çözümleri</Link></li>
+                <li className="mb-2 hover:text-fsm-red"><Link to="/videowall">Videowall Ekran</Link></li>
+                <li className="mb-2 hover:text-fsm-red"><Link to="/electronic-payment">Elektronik Ücret Toplama</Link></li>
+                <li className="mb-2 hover:text-fsm-red"><Link to="/highway">Otoyol Sistemleri</Link></li>
+                <li className="mb-2 hover:text-fsm-red"><Link to="/simulator">Simulatörler</Link></li>
+                <li className="mb-2 hover:text-fsm-red"><Link to="/security">Güvenlik Çözümleri</Link></li>
+                <li className="mb-2 hover:text-fsm-red"><Link to="/mobile-hospital">Mobil Hastane</Link></li>
+                <li className="mb-2 hover:text-fsm-red"><Link to="/datacenter">Datacenter</Link></li>
+                <li className="mb-2 hover:text-fsm-red"><Link to="/cable">Yapısal Kablolama</Link></li>
             </ul>
         </div>
         <div className="iletişim">

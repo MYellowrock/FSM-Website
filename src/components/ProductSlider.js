@@ -10,9 +10,11 @@ import hospital from "../image/mobileHospital.png";
 import datacenter from "../image/datacenter.jpg";
 import cable from "../image/cable.jpg";
 
+import { Link } from "react-router-dom";
+
 function ProductSlider() {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 2000,
     slidesToShow: 1,
@@ -29,130 +31,130 @@ function ProductSlider() {
           className="flex flex-col items-center justify-center"
         >
           <h1 className="text-xl mb-2 font-semibold text-center text-fsm-blue">Akıllı Durak</h1>
-          <a href="/">
+          <Link to="/smart-stop">
             <img
               className="w-[750px] h-[400px] inline-block mx-auto border-solid border-4 rounded-2xl"
               src={smartStop}
               alt="im-1"
             />
-          </a>
+          </Link>
         </div>
         <div
           id="smart-city-solutions"
           className="flex flex-col items-center justify-center"
         >
           <h1 className="text-xl mb-2 font-semibold text-center text-fsm-blue">Akıllı Şehir</h1>
-          <a href="/">
+          <Link to="/smart-city">
             <img
               className="w-[500px] h-[400px] inline-block mx-auto"
               src={smartCity}
               alt="im-1"
             />
-          </a>
+          </Link>
         </div>
         <div
           id="videowall-solutions"
           className="flex flex-col items-center justify-center"
         >
           <h1 className="text-xl mb-2 font-semibold text-center text-fsm-blue">Videowall Ekran</h1>
-          <a href="/">
+          <Link to="/videowall">
             <img
               className="w-[750px] h-[400px] inline-block mx-auto"
               src={videowall}
               alt="im-2"
             />
-          </a>
+          </Link>
         </div>
         <div
           id="electronic-payment-solutions"
           className="flex flex-col items-center justify-center"
         >
           <h1 className="text-xl mb-2 font-semibold text-center text-fsm-blue">Elektronik Ücret Toplama</h1>
-          <a href="/">
+          <Link to="/electronic-payment">
             <img
               className="w-[750px] h-[400px] inline-block mx-auto border-solid border-4 rounded-2xl"
               src={payment}
               alt="im-1"
             />
-          </a>
+          </Link>
         </div>
         <div
           id="highway-solutions"
           className="flex flex-col items-center justify-center"
         >
           <h1 className="text-xl mb-2 font-semibold text-center text-fsm-blue">Otoyol Sistemleri</h1>
-          <a href="/">
+          <Link to="/highway">
             <img
               className="w-[750px] h-[400px] inline-block mx-auto border-solid border-4 rounded-2xl"
               src={highway}
               alt="im-1"
             />
-          </a>
+          </Link>
         </div>
         <div
           id="simulator-solutions"
           className="flex flex-col items-center justify-center"
         >
           <h1 className="text-xl mb-2 font-semibold text-center text-fsm-blue">Simülatörler</h1>
-          <a href="/">
+          <Link to="/simulator">
             <img
               className="w-[750px] h-[400px] inline-block mx-auto border-solid border-4 rounded-2xl"
               src={simulator}
               alt="im-1"
             />
-          </a>
+          </Link>
         </div>
         <div
           id="security-solutions"
           className="flex flex-col items-center justify-center"
         >
           <h1 className="text-xl mb-2 font-semibold text-center text-fsm-blue">Güvenlik Çözümleri</h1>
-          <a href="/">
+          <Link to="/security">
             <img
               className="w-[550px] h-[400px] inline-block mx-auto"
               src={security}
               alt="im-1"
             />
-          </a>
+          </Link>
         </div>
         <div
           id="mobile-hospital-solutions"
           className="flex flex-col items-center justify-center"
         >
           <h1 className="text-xl mb-2 font-semibold text-center text-fsm-blue">Mobil Hastane</h1>
-          <a href="/">
+          <Link to="/mobile-hospital">
             <img
               className="w-[750px] h-[400px] inline-block mx-auto border-solid border-4 rounded-2xl"
               src={hospital}
               alt="im-1"
             />
-          </a>
+          </Link>
         </div>
         <div
           id="datacenter-solutions"
           className="flex flex-col items-center justify-center"
         >
           <h1 className="text-xl mb-2 font-semibold text-center text-fsm-blue">Datacenter</h1>
-          <a href="/">
+          <Link to="/datacenter">
             <img
               className="w-[750px] h-[400px] inline-block mx-auto border-solid border-4 rounded-2xl"
               src={datacenter}
               alt="im-1"
             />
-          </a>
+          </Link>
         </div>
         <div
           id="cable-solutions"
           className="flex flex-col items-center justify-center"
         >
           <h1 className="text-xl mb-2 font-semibold text-center text-fsm-blue">Yapısal Kablolama</h1>
-          <a href="/">
+          <Link to="/cable">
             <img
               className="w-[750px] h-[400px] inline-block mx-auto border-solid border-4 rounded-2xl"
               src={cable}
               alt="im-1"
             />
-          </a>
+          </Link>
         </div>
       </Slider>
     </div>
