@@ -36,7 +36,7 @@ function App() {
     <BrowserRouter>
       <Nav />
       <Routes>
-        <Route path="/" element={<MainPage />} />
+        <Route path="/test2" element={<MainPage />} />
         <Route path="/human-sources" element={<Ik />} />
         <Route path="/news" element={<News />} />
         <Route path="/online" element={<Online />} />
