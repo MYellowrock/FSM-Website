@@ -109,6 +109,11 @@ function Intern() {
           </label>
 
           <label className="block text-center mt-6">
+            <span className="block text-xl font-semibold mb-2">CV</span>
+            <input type="file" accept="image/*" className="peer text-center" name="cv"/>
+          </label>
+
+          <label className="block text-center mt-6">
             <span className="block text-xl font-semibold mb-2">Comments</span>
             <textarea
               className="peer border-2 rounded-2xl p-4 w-1/2 h-32 text-center"
