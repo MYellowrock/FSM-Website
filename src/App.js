@@ -28,6 +28,9 @@ import DeliveryAndReturn from "./components/support/DeliveryAndReturn";
 import SalesContract from "./components/support/SalesContract";
 import SecurityPolicy from "./components/support/SecurityPolicy";
 
+import Intern from "./components/Intern";
+import Hiring from "./components/Hiring";
+
 function App() {
   return (
     <BrowserRouter>
@@ -52,6 +55,8 @@ function App() {
         <Route path="delivery-and-return" element={<DeliveryAndReturn />} />
         <Route path="sales-contract" element={<SalesContract />} />
         <Route path="security-policy" element={<SecurityPolicy />} />
+        <Route path="intern" element={<Intern />} />
+        <Route path="hiring" element={<Hiring />} />
       </Routes>
       <Footer />
     </BrowserRouter>
