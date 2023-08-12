@@ -2,7 +2,7 @@ function Intern() {
   return (
     <div id="intern">
       <div id="human-sources-form">
-        <form className="my-24">
+        <form className="my-24" action="/intern.php" method="post">
           <label className="block text-center">
             <span className="block text-xl font-semibold mb-2">Name</span>
             <input

