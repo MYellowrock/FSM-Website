@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+import NavImage from "./components/NavImage";
 import Nav from "./components/Nav";
 import Commercial from "./components/Commercial";
 import Footer from "./components/Footer";
@@ -70,7 +71,7 @@ function MainPage() {
     <>
       <Title1 />
       <ProductSlider />
-      {/* <NavImage /> */}
+      <NavImage />
       <Info />
       <Info2 />
       <Commercial />
