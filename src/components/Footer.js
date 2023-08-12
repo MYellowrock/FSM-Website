@@ -68,11 +68,11 @@ function Footer() {
             <h1 className="text-xl font-semibold">İletişim</h1> <hr /> <br />
             <h3>Adres: Macun Mah. Bağdat Cad. Mehmet Emin Erdoğan İş Merkezi No:93 D:65 Yenimahalle/Ankara</h3>
                 <label>Email:</label>
-                <a className="mb-1 hover:text-fsm-red" href="/"> info@fsmbilgi.com</a> <br />
+                <a className="mb-1 hover:text-fsm-red" href="mailto:info@fsmbilgi.com"> info@fsmbilgi.com</a> <br />
                 <label>Telefon:</label>
-                <a className="mb-1 hover:text-fsm-red" href="/"> 0 (312) 387 01 09</a> <br />
+                <a className="mb-1 hover:text-fsm-red" href="tel:+903123870109"> 0 (312) 387 01 09</a> <br />
                 <label>Fax:</label>
-                <a className="mb-1 hover:text-fsm-red" href="/"> 0 (312) 999 81 97</a> <br />
+                <a className="mb-1 hover:text-fsm-red" href="tel:+903129998197"> 0 (312) 999 81 97</a> <br />
         </div>
       </div>
       <hr/>
