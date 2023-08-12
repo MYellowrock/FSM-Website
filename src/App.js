@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 import Nav from "./components/Nav";
-import NavImage from "./components/NavImage";
 import Commercial from "./components/Commercial";
 import Footer from "./components/Footer";
 import Title1 from "./components/Title1";
@@ -35,6 +36,7 @@ function App() {
   return (
     <BrowserRouter>
       <Nav />
+      <ScrollToTopOnPageChange />
       <Routes>
         <Route path="/test2" element={<MainPage />} />
         <Route path="/human-sources" element={<Ik />} />
@@ -66,14 +68,24 @@ function App() {
 function MainPage() {
   return (
     <>
-      <NavImage />
+      <Title1 />
+      <ProductSlider />
+      {/* <NavImage /> */}
       <Info />
       <Info2 />
       <Commercial />
-      <Title1 />
-      <ProductSlider />
     </>
   );
+}
+
+function ScrollToTopOnPageChange() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 }
 
 export default App;

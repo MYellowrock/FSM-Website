@@ -1,5 +1,5 @@
 import "./solutionStyles/solutionsAll.css";
-import { GrLocation } from "react-icons/gr";
+import turkeyMap from "./solutionsImage/turkeyMapLocations.jfif";
 import { TiTickOutline } from "react-icons/ti";
 import smartStop1 from "./solutionsImage/smartStop1.png";
 import smartStop2 from "./solutionsImage/smartStop2.png";
@@ -41,81 +41,11 @@ function SmartStop() {
         <p className="text-2xl font-semibold text-center my-6">
           Kurulum Yaptığımız İller
         </p>
-        <div className="grid-rows-8 text-center mb-24">
-          <div className="cities inline-block m-4 px-10 py-4 border-4 rounded-2xl border-black hover:bg-gradient-to-r from-blue-400 to-purple-400 hover:ease-in duration-300">
-            <GrLocation className="mx-auto mb-1 text-xl" />
-            <div className="text-center text-2xl text-black font-semibold cursorCity">
-              Ankara
-            </div>
-          </div>
-          <div className="cities inline-block m-4 px-10 py-4 border-4 rounded-2xl border-black hover:bg-gradient-to-r from-blue-400 to-purple-400 hover:ease-in duration-300">
-            <GrLocation className="mx-auto mb-1 text-xl" />
-            <div className="text-center text-2xl text-black font-semibold cursorCity">
-              Gaziantep
-            </div>
-          </div>
-          <div className="cities inline-block m-4 px-10 py-4 border-4 rounded-2xl border-black hover:bg-gradient-to-r from-blue-400 to-purple-400 hover:ease-in duration-300">
-            <GrLocation className="mx-auto mb-1 text-xl" />
-            <div className="text-center text-2xl text-black font-semibold cursorCity">
-              Kahramanmaraş
-            </div>
-          </div>
-          <div className="cities inline-block m-4 px-10 py-4 border-4 rounded-2xl border-black hover:bg-gradient-to-r from-blue-400 to-purple-400 hover:ease-in duration-300">
-            <GrLocation className="mx-auto mb-1 text-xl" />
-            <div className="text-center text-2xl text-black font-semibold cursorCity">
-              Kayseri
-            </div>
-          </div>
-          <div className="cities inline-block m-4 px-10 py-4 border-4 rounded-2xl border-black hover:bg-gradient-to-r from-blue-400 to-purple-400 hover:ease-in duration-300">
-            <GrLocation className="mx-auto mb-1 text-xl" />
-            <div className="text-center text-2xl text-black font-semibold cursorCity">
-              Kütahya
-            </div>
-          </div>
-          <div className="cities inline-block m-4 px-10 py-4 border-4 rounded-2xl border-black hover:bg-gradient-to-r from-blue-400 to-purple-400 hover:ease-in duration-300">
-            <GrLocation className="mx-auto mb-1 text-xl" />
-            <div className="text-center text-2xl text-black font-semibold cursorCity">
-              Sakarya
-            </div>
-          </div>
-          <div className="cities inline-block m-4 px-10 py-4 border-4 rounded-2xl border-black hover:bg-gradient-to-r from-blue-400 to-purple-400 hover:ease-in duration-300">
-            <GrLocation className="mx-auto mb-1 text-xl" />
-            <div className="text-center text-2xl text-black font-semibold cursorCity">
-              Uşak
-            </div>
-          </div>
-          <div className="cities inline-block m-4 px-10 py-4 border-4 rounded-2xl border-black hover:bg-gradient-to-r from-blue-400 to-purple-400 hover:ease-in duration-300">
-            <GrLocation className="mx-auto mb-1 text-xl" />
-            <div className="text-center text-2xl text-black font-semibold cursorCity">
-              Hatay
-            </div>
-          </div>
-          <div className="cities inline-block m-4 px-10 py-4 border-4 rounded-2xl border-black hover:bg-gradient-to-r from-blue-400 to-purple-400 hover:ease-in duration-300">
-            <GrLocation className="mx-auto mb-1 text-xl" />
-            <div className="text-center text-2xl text-black font-semibold cursorCity">
-              Balıkesir
-            </div>
-          </div>
-          <div className="cities inline-block m-4 px-10 py-4 border-4 rounded-2xl border-black hover:bg-gradient-to-r from-blue-400 to-purple-400 hover:ease-in duration-300">
-            <GrLocation className="mx-auto mb-1 text-xl" />
-            <div className="text-center text-2xl text-black font-semibold cursorCity">
-              Batman
-            </div>
-          </div>
-          <div className="cities inline-block m-4 px-10 py-4 border-4 rounded-2xl border-black hover:bg-gradient-to-r from-blue-400 to-purple-400 hover:ease-in duration-300">
-            <GrLocation className="mx-auto mb-1 text-xl" />
-            <div className="text-center text-2xl text-black font-semibold cursorCity">
-              Elazığ
-            </div>
-          </div>
-          <div className="cities inline-block m-4 px-10 py-4 border-4 rounded-2xl border-black hover:bg-gradient-to-r from-blue-400 to-purple-400 hover:ease-in duration-300">
-            <GrLocation className="mx-auto mb-1 text-xl" />
-            <div className="text-center text-2xl text-black font-semibold cursorCity">
-              Malatya
-            </div>
-          </div>
+        <div className="flex justify-center items-center mb-8">
+          <img src={turkeyMap} alt="turkey-map" width={1000} className="rounded-xl"/>
         </div>
       </div>
+
 
       <div id="infos" className="text-center">
         <ul>
