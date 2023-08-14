@@ -36,7 +36,7 @@ function ElectronicPayment() {
           Otomatik Ödeme Veznesi
         </h1>
         <hr />
-        <div className="flex items-center justify-around">
+        <div className="responsive-class flex items-center justify-around">
           <div className="flex items-center justify-center mb-24">
             <img
               src={payment1}

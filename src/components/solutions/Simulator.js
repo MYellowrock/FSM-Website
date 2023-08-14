@@ -31,7 +31,7 @@ function Simulator() {
         </a>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="responsive-class flex justify-center items-center">
         <div id="infos">
           <h1 className="text-2xl font-bold cursorCity mb-8 mt-24">
             İLERİ SÜRÜŞ EĞİTİM SİMÜLATÖRÜ
@@ -119,7 +119,7 @@ function Simulator() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center my-24">
+      <div className="responsive-class flex justify-center items-center my-24">
         <div className="flex flex-col items-center justify-center mx-12">
           <img
             src={simulator3}
@@ -226,7 +226,7 @@ function Simulator() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="responsive-class flex justify-center items-center">
         <div id="infos">
           <h1 className="text-2xl font-bold cursorCity mb-8 mt-24">
             MOTION PLATFORM

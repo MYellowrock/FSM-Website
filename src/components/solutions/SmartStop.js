@@ -168,7 +168,7 @@ function SmartStop() {
         </div>
       </Slider>
 
-      <div id="solutions-footer" className="flex items-center justify-around">
+      <div id="solutions-footer" className="responsive-class flex items-center justify-around">
         <div>
           <h1 className="text-2xl font-semibold my-4">
             Sosyal Sorumluluk Projesi Akıllı Durak Sistemi

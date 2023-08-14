@@ -28,7 +28,7 @@ function Security() {
         </a>
       </div>
 
-      <div className="flex flex-row items-center justify-around">
+      <div className="responsive-class flex flex-row items-center justify-around">
         <div id="first-image">
           <div className="flex flex-col items-center justify-center mx-12">
             <img
@@ -73,7 +73,7 @@ function Security() {
       </div>
 
 
-      <div className="flex justify-center items-center my-24">
+      <div className="responsive-class flex justify-center items-center my-24">
         <div id="infos">
           <h2 className="text-xl font-bold cursorCity">
             Video-Radar Çevre Güvenlik Sistemi
@@ -136,7 +136,7 @@ function Security() {
       </div>
 
 
-      <div className="flex justify-around items-center">
+      <div className="responsive-class flex justify-around items-center">
         <div className="flex flex-col items-center justify-center mx-12">
           <img
             src={security3}

@@ -29,7 +29,7 @@ function MobileHospital() {
         </a>
       </div>
 
-      <div className="flex flex-col items-center justify-center">
+      <div className="responsive-class flex flex-col items-center justify-center">
         <div className="flex flex-col items-center justify-center mx-12">
           <img
             src={hospital3}
@@ -73,7 +73,7 @@ function MobileHospital() {
         </div>
       </div>
 
-      <div id="infos" className="my-16">
+      <div id="infos" className="responsive-class my-16">
         <h1 className="text-2xl font-bold cursorCity mb-8 mt-24 text-center">
           Mobil Hastane Oluşturan Bölümler
         </h1>

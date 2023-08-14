@@ -26,7 +26,7 @@ function Datacenter() {
         <hr />
       </div>
 
-      <div className="flex items-center justify-around">
+      <div className="responsive-class flex items-center justify-around">
         <div className="flex items-center justify-center">
           <img
             src={datacenter1}
@@ -87,7 +87,7 @@ function Datacenter() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center my-24">
+      <div className="responsive-class flex justify-center items-center my-24">
         <div id="infos">
           <h2 className="text-xl font-bold cursorCity">
             PDU Power Distribution Unit

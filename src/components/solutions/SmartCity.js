@@ -119,7 +119,7 @@ function SmartCity() {
       </div>
       <hr />
 
-      <div className="flex justify-center items-center">
+      <div className="responsive-class flex justify-center items-center">
         <div className="flex flex-col items-center justify-center mx-12">
           <img
             src={smartCity7}
@@ -131,7 +131,7 @@ function SmartCity() {
         </div>
         <div id="infos">
           <h1 className="text-2xl font-bold cursorCity mb-8 mt-24">
-            RADAR HIZ UYARI SİSTEMLERi
+            RADAR HIZ UYARI SİSTEMLERİ
           </h1>
           <ul>
             <div className="lists">
@@ -274,7 +274,7 @@ function SmartCity() {
       </Slider>
 
 
-      <div className="flex justify-center items-center">
+      <div className="responsive-class flex justify-center items-center">
         <div id="infos">
           <h1 className="text-2xl font-bold cursorCity mb-8 mt-24">
             RADAR HIZ UYARI SİSTEMLERİ
@@ -370,7 +370,7 @@ function SmartCity() {
       </div>
 
 
-      <div className="flex justify-center items-center my-24">
+      <div className="responsive-class flex justify-center items-center my-24">
         <div className="flex flex-col items-center justify-center mx-12">
           <img
             src={smartCity9}
@@ -424,7 +424,7 @@ function SmartCity() {
       </div>
 
 
-      <div className="flex justify-center items-center my-36">
+      <div className="responsive-class flex justify-center items-center my-36">
         <div id="infos">
           <h1 className="text-2xl font-bold cursorCity mb-8 mt-24">
             ROBOTİK OTOPARK SİSTEMLERİ
@@ -478,7 +478,7 @@ function SmartCity() {
       </div>
 
 
-      <div className="flex justify-center items-center my-24">
+      <div className="responsive-class flex justify-center items-center my-24">
         <div className="flex flex-col items-center justify-center mx-12">
           <img
             src={smartCity11}
@@ -552,7 +552,7 @@ function SmartCity() {
       </div>
 
 
-      <div className="flex justify-center items-center my-36">
+      <div className="responsive-class flex justify-center items-center my-36">
         <div id="infos">
           <h1 className="text-2xl font-bold cursorCity mb-8 mt-24">
             AÇIK OTOPARK SİSTEMİ (Görüntü işleme ve Radar Teknolojisi)
@@ -620,7 +620,7 @@ function SmartCity() {
       </div>
 
 
-      <div id="solutions-footer" className="flex items-center justify-around">
+      <div id="solutions-footer" className="responsive-class flex items-center justify-around">
         <div>
           <h1 className="text-2xl font-semibold my-4">
             Milli Park HGS ve Otogar Ücret Göstergesi

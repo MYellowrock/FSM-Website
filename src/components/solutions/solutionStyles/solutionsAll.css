@@ -6,3 +6,14 @@
 .cursorCity {
     cursor: default;
 }
+
+@media (max-width: 768px) {
+
+    .responsive-class {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
