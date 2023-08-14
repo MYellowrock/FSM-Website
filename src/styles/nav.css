@@ -17,4 +17,18 @@
     .fsm-logo-bottom {
         width: 48px;
     }
+
+    .navbar-section-class {
+        display: none; /* Hide the navigation items by default on smaller screens */
+        /* ... other styles ... */
+      }
+    
+      .hamburger-icon {
+        display: block; /* Show the hamburger icon on smaller screens */
+        /* ... icon styles ... */
+      }
+    
+      .navbar-section-class.open {
+        display: block; /* Show the navigation items when menu is open */
+      }
   }

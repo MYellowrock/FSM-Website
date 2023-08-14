@@ -8,8 +8,8 @@ function Info2() {
       id="info"
       className="flex justify-center items-center h-screen bg-gray-100 mt-12"
     >
-      <div id="info-2-parts" className="flex items-center justify-center">
-        <div id="info-2-first" className="flex flex-col items-center mr-8">
+      <div id="info-2-parts" className="info-2-class flex items-center justify-center">
+        <div id="info-2-first" className="first-part flex flex-col items-center mr-8">
           <div className="companyImage">
             <img src={handtools} alt="company" width={128} className="mb-8" />
           </div>
@@ -19,7 +19,7 @@ function Info2() {
             </p>
           </div>
         </div>
-        <div id="info-2-second">
+        <div id="info-2-second" className="second-part">
           <div id="info-2-first" className="flex flex-col items-center ml-8">
             <div className="companyImage">
               <img src={department} alt="company" width={128} className="mb-8" />
