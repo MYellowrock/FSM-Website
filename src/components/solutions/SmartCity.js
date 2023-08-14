@@ -14,6 +14,9 @@ import smartCity10 from "./solutionsImage/smartCity10.png";
 import smartCity11 from "./solutionsImage/smartCity11.png";
 import smartCity12 from "./solutionsImage/smartCity12.png";
 
+import { FaFilePdf } from "react-icons/fa";
+import smartCityPdf from "../../smartCityPdf.pdf";
+
 function SmartCity() {
   const settings = {
     dots: true,
@@ -31,9 +34,19 @@ function SmartCity() {
         id="header-smartStop"
         className="w-full bg-gradient-to-r from-blue-600 to-purple-600 p-4 flex items-center justify-center my-12"
       >
-        <h1 className="text-4xl font-bold text-white cursorCity">
+        <h1 className="text-4xl font-bold text-white cursorCity text-center">
           AKILLI ŞEHİR ÇÖZÜMLERİ
         </h1>
+      </div>
+
+      <div class="flex justify-center items-center my-12">
+        <a
+          href={smartCityPdf}
+          download="fsmAkilliSehir.pdf"
+          class="inline-block"
+        >
+          <FaFilePdf class="text-5xl" />
+        </a>
       </div>
 
       <div id="infos" className="text-center">

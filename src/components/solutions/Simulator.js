@@ -6,6 +6,9 @@ import simulator3 from "./solutionsImage/simulator3.png";
 import simulator4 from "./solutionsImage/simulator4.png";
 import simulator5 from "./solutionsImage/simulator5.png";
 
+import { FaFilePdf } from "react-icons/fa";
+import simulatorPdf from "../../simulatorPdf.pdf";
+
 function Simulator() {
   return (
     <div id="simulator">
@@ -13,10 +16,21 @@ function Simulator() {
         id="header-smartStop"
         className="w-full bg-gradient-to-r from-blue-600 to-purple-600 p-4 flex items-center justify-center my-12"
       >
-        <h1 className="text-4xl font-bold text-white cursorCity">
+        <h1 className="text-4xl font-bold text-white cursorCity text-center">
           SİMÜLATÖR ÇÖZÜMLERİ
         </h1>
       </div>
+
+      <div class="flex justify-center items-center my-12">
+        <a
+          href={simulatorPdf}
+          download="fsmSimülasyon.pdf"
+          class="inline-block"
+        >
+          <FaFilePdf class="text-5xl" />
+        </a>
+      </div>
+
       <div className="flex justify-center items-center">
         <div id="infos">
           <h1 className="text-2xl font-bold cursorCity mb-8 mt-24">

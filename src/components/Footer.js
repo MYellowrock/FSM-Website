@@ -1,5 +1,6 @@
 import { AiOutlineCopyright } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import "../styles/footer.css";
 
 function Footer() {
 
@@ -37,9 +38,9 @@ function Footer() {
   };
 
   return (
-    <div id="contact-section">
+    <div id="contact-section" className="footer">
       <div className="info-section my-16 flex justify-around">
-        <div className="destek">
+        <div className="destek mt-12">
             <h1 className="text-xl font-semibold">Destek</h1> <hr /> <br />
           <ul>
             <li className="mb-2 hover:text-fsm-red"><Link to="/security-policy">Gizlilik Politikası</Link></li>
@@ -56,23 +57,19 @@ function Footer() {
                 <li className="mb-2 hover:text-fsm-red"><Link to="/smart-city">Akıllı Kent Çözümleri</Link></li>
                 <li className="mb-2 hover:text-fsm-red"><Link to="/videowall">Videowall Ekran</Link></li>
                 <li className="mb-2 hover:text-fsm-red"><Link to="/electronic-payment">Elektronik Ücret Toplama</Link></li>
-                <li className="mb-2 hover:text-fsm-red"><Link to="/highway">Otoyol Sistemleri</Link></li>
                 <li className="mb-2 hover:text-fsm-red"><Link to="/simulator">Simulatörler</Link></li>
                 <li className="mb-2 hover:text-fsm-red"><Link to="/security">Güvenlik Çözümleri</Link></li>
                 <li className="mb-2 hover:text-fsm-red"><Link to="/mobile-hospital">Mobil Hastane</Link></li>
                 <li className="mb-2 hover:text-fsm-red"><Link to="/datacenter">Datacenter</Link></li>
-                <li className="mb-2 hover:text-fsm-red"><Link to="/cable">Yapısal Kablolama</Link></li>
             </ul>
         </div>
-        <div className="iletişim">
+        <div className="iletişim mt-12">
             <h1 className="text-xl font-semibold">İletişim</h1> <hr /> <br />
             <h3>Adres: Macun Mah. Bağdat Cad. Mehmet Emin Erdoğan İş Merkezi No:93 D:65 Yenimahalle/Ankara</h3>
                 <label>Email:</label>
                 <a className="mb-1 hover:text-fsm-red" href="mailto:info@fsmbilgi.com"> info@fsmbilgi.com</a> <br />
                 <label>Telefon:</label>
                 <a className="mb-1 hover:text-fsm-red" href="tel:+903123870109"> 0 (312) 387 01 09</a> <br />
-                <label>Fax:</label>
-                <a className="mb-1 hover:text-fsm-red" href="tel:+903129998197"> 0 (312) 999 81 97</a> <br />
         </div>
       </div>
       <hr/>
@@ -80,7 +77,7 @@ function Footer() {
         <div id="copyright">
           <p>Copyright <AiOutlineCopyright className="inline-block"/> 2023 Bilgi Teknolojileri</p>
         </div>
-        <div>
+        <div className="end-part-copyright">
           <a href="/" className="inline-block mr-2 hover:text-fsm-red">Gizlilik Politikası</a>
           <p className="inline-block mr-2 text-2xl font-semibold">-</p> 
           <a href="/" className="inline-block mr-2 hover:text-fsm-red">Teslimat ve İade Koşulları</a>

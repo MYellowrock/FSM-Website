@@ -4,6 +4,9 @@ import hospital3 from "./solutionsImage/hospital3.png";
 import "./solutionStyles/solutionsAll.css";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 
+import { FaFilePdf } from "react-icons/fa";
+import hospitalPdf from "../../hospitalPdf.pdf";
+
 function MobileHospital() {
   return (
     <div id="mobile-hospital">
@@ -11,10 +14,21 @@ function MobileHospital() {
         id="header-smartStop"
         className="w-full bg-gradient-to-r from-blue-600 to-purple-600 p-4 flex items-center justify-center my-12"
       >
-        <h1 className="text-4xl font-bold text-white cursorCity">
+        <h1 className="text-4xl font-bold text-white cursorCity text-center">
           MOBİL HASTANE ÇÖZÜMLERİ
         </h1>
       </div>
+
+      <div class="flex justify-center items-center my-12">
+        <a
+          href={hospitalPdf}
+          download="fsmMobilHastane.pdf"
+          class="inline-block"
+        >
+          <FaFilePdf class="text-5xl" />
+        </a>
+      </div>
+
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col items-center justify-center mx-12">
           <img

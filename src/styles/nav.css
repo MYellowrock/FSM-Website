@@ -1,3 +1,20 @@
 #nav-bar {
     height: 20vh;
 }
+
+@media (max-width: 768px) {
+    .logo-class, .navbar-section-class {
+        margin: 0;
+    }
+
+    .navbar-texts {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .fsm-logo-bottom {
+        width: 48px;
+    }
+  }

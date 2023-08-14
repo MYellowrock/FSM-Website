@@ -1,0 +1,33 @@
+/* footer.css */
+.footer {
+    /* Your default styling for the footer */
+  
+    @media (max-width: 768px) {
+      /* Styles for small screens (up to 768px) */
+      .info-section {
+        /* Adjust the styling for info section */
+        flex-direction: column; /* Stack sections vertically */
+      }
+  
+      .iletişim {
+        /* Adjust the styling for contact section */
+        margin-top: 1rem;
+      }
+  
+      #last-part {
+        /* Adjust the styling for the last part */
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .end-part-copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+      }
+
+      /* Additional responsive styles as needed */
+    }
+  }
+  

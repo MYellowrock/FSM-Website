@@ -3,6 +3,9 @@ import security2 from "../solutions/solutionsImage/security2.png";
 import security3 from "../solutions/solutionsImage/security3.png";
 import { GoDot } from "react-icons/go";
 
+import { FaFilePdf } from "react-icons/fa";
+import securityPdf from "../../securityPdf.pdf";
+
 function Security() {
   return (
     <div id="security">
@@ -10,11 +13,20 @@ function Security() {
         id="header-smartStop"
         className="w-full bg-gradient-to-r from-blue-600 to-purple-600 p-4 flex items-center justify-center my-12"
       >
-        <h1 className="text-4xl font-bold text-white cursorCity">
+        <h1 className="text-4xl font-bold text-white cursorCity text-center">
           GÜVENLİK ÇÖZÜMLERİ
         </h1>
       </div>
 
+      <div class="flex justify-center items-center my-12">
+        <a
+          href={securityPdf}
+          download="fsmGuvenlik.pdf"
+          class="inline-block"
+        >
+          <FaFilePdf class="text-5xl" />
+        </a>
+      </div>
 
       <div className="flex flex-row items-center justify-around">
         <div id="first-image">

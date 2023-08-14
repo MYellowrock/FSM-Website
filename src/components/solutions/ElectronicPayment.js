@@ -2,6 +2,12 @@ import payment1 from "./solutionsImage/payment1.png";
 import payment2 from "./solutionsImage/payment2.png";
 import { TiTickOutline } from "react-icons/ti";
 import "./solutionStyles/solutionsAll.css";
+import "./solutionStyles/solutionsAll.css";
+import highway1 from "./solutionsImage/highway1.png";
+import highway2 from "./solutionsImage/highway2.png";
+
+import { FaFilePdf } from "react-icons/fa";
+import paymentPdf from "../../paymentPdf.pdf";
 
 function ElectronicPayment() {
   return (
@@ -10,10 +16,21 @@ function ElectronicPayment() {
         id="header-smartStop"
         className="w-full bg-gradient-to-r from-blue-600 to-purple-600 p-4 flex items-center justify-center my-12"
       >
-        <h1 className="text-4xl font-bold text-white cursorCity">
+        <h1 className="text-4xl font-bold text-white cursorCity text-center">
           ELEKTRONİK ÜCRET TOPLAMA (KİOSK) SİSTEM ÇÖZÜMLERİ
         </h1>
       </div>
+
+      <div class="flex justify-center items-center my-12">
+        <a
+          href={paymentPdf}
+          download="fsmElektronikOdeme.pdf"
+          class="inline-block"
+        >
+          <FaFilePdf class="text-5xl" />
+        </a>
+      </div>
+
       <div id="infos" className="text-center">
         <h1 className="text-2xl font-bold cursorCity mb-8 mt-24">
           Otomatik Ödeme Veznesi
@@ -101,6 +118,23 @@ function ElectronicPayment() {
               alt="im-1"
               className="text-center mx-auto w-[400]"
             />
+          </div>
+        </div>
+      </div>
+
+      <div id="highway">
+        <div
+          id="header-smartStop"
+          className="w-full bg-gradient-to-r from-blue-600 to-purple-600 p-4 flex items-center justify-center my-12"
+        >
+          <h1 className="text-4xl font-bold text-white cursorCity">
+            OTOYOL ÇÖZÜMLERİ
+          </h1>
+        </div>
+        <div id="highway-images">
+          <div className="flex flex-col justify-center items-center">
+            <img src={highway1} alt="highway-1" width={1000} className="m-24" />
+            <img src={highway2} alt="highway-2" width={1000} className="m-24" />
           </div>
         </div>
       </div>

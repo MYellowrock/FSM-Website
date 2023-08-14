@@ -1,6 +1,8 @@
 import "./solutionStyles/solutionsAll.css";
 import turkeyMap from "./solutionsImage/turkeyMapLocations.jfif";
 import { TiTickOutline } from "react-icons/ti";
+import { FaFilePdf } from "react-icons/fa";
+import smartStopPdf from "../../smartStopPdf.pdf";
 import smartStop1 from "./solutionsImage/smartStop1.png";
 import smartStop2 from "./solutionsImage/smartStop2.png";
 import smartStop3 from "./solutionsImage/smartStop3.png";
@@ -25,9 +27,18 @@ function SmartStop() {
         id="header-smartStop"
         className="w-full bg-gradient-to-r from-blue-600 to-purple-600 p-4 flex items-center justify-center my-12"
       >
-        <h1 className="text-4xl font-bold text-white cursorCity">
+        <h1 className="text-4xl font-bold text-white cursorCity text-center">
           AKILLI DURAK ÇÖZÜMLERİ
         </h1>
+      </div>
+      <div class="flex justify-center items-center my-12">
+        <a
+          href={smartStopPdf}
+          download="fsmAkilliDurak.pdf"
+          class="inline-block"
+        >
+          <FaFilePdf class="text-5xl" />
+        </a>
       </div>
       <div id="text-part">
         <h2 className="text-2xl font-semibold text-fsm-blue my-4 text-center">
@@ -42,10 +53,14 @@ function SmartStop() {
           Kurulum Yaptığımız İller
         </p>
         <div className="flex justify-center items-center mb-8">
-          <img src={turkeyMap} alt="turkey-map" width={1000} className="rounded-xl"/>
+          <img
+            src={turkeyMap}
+            alt="turkey-map"
+            width={1000}
+            className="rounded-xl"
+          />
         </div>
       </div>
-
 
       <div id="infos" className="text-center">
         <ul>

@@ -19,12 +19,10 @@ import SmartStop from "./components/solutions/SmartStop";
 import SmartCity from "./components/solutions/SmartCity";
 import Videowall from "./components/solutions/Videowall";
 import ElectronicPayment from "./components/solutions/ElectronicPayment";
-import Highway from "./components/solutions/Highway";
 import Simulator from "./components/solutions/Simulator";
 import Security from "./components/solutions/Security";
 import MobileHospital from "./components/solutions/MobileHospital";
 import Datacenter from "./components/solutions/Datacenter";
-import Cable from "./components/solutions/Cable";
 import Communication from "./components/support/Communication";
 import DeliveryAndReturn from "./components/support/DeliveryAndReturn";
 import SalesContract from "./components/support/SalesContract";
@@ -48,12 +46,10 @@ function App() {
         <Route path="smart-city" element={<SmartCity />} />
         <Route path="videowall" element={<Videowall />} />
         <Route path="electronic-payment" element={<ElectronicPayment />} />
-        <Route path="highway" element={<Highway />} />
         <Route path="simulator" element={<Simulator />} />
         <Route path="security" element={<Security />} />
         <Route path="mobile-hospital" element={<MobileHospital />} />
         <Route path="datacenter" element={<Datacenter />} />
-        <Route path="cable" element={<Cable />} />
         <Route path="communication" element={<Communication />} />
         <Route path="delivery-and-return" element={<DeliveryAndReturn />} />
         <Route path="sales-contract" element={<SalesContract />} />

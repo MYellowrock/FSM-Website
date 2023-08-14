@@ -12,23 +12,8 @@ function Online() {
     setPassword(event.target.value);
   };
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-  
-    try {
-      const response = await fetch('/save.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: `username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`,
-      });
-  
-      const data = await response.text();
-      console.log(data); // Display the response from the server
-    } catch (error) {
-      console.error('Error:', error);
-    }
   
     setUsername('');
     setPassword('');
@@ -39,7 +24,7 @@ function Online() {
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md">
         <h2 className="text-2xl font-semibold mb-4">Giriş Yap</h2>
-        <form onSubmit={handleSubmit}>
+        <form action='C:\xampp\htdocs/submit.php' onSubmit={handleSubmit} method="post">
           <label className="block mb-2">
             Kullanıcı Adı:
             <input
