@@ -10,7 +10,9 @@ function Datacenter() {
         id="header-smartStop"
         className="w-full bg-gradient-to-r from-blue-600 to-purple-600 p-4 flex items-center justify-center my-12"
       >
-        <h1 className="text-4xl font-bold text-white cursorCity text-center">DATACENTER</h1>
+        <h1 className="text-4xl font-bold text-white cursorCity text-center">
+          DATACENTER
+        </h1>
       </div>
 
       <div id="text-part">
@@ -36,44 +38,44 @@ function Datacenter() {
         </div>
         <ul className="mr-20">
           <div className="lists">
-            <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
             <li className="font-semibold text-lg inline-block">
+              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               Direk üstü kabinetler
             </li>
           </div>
           <div className="lists">
-            <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
             <li className="font-semibold text-lg inline-block">
+              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               PTZ Kameralar
             </li>
           </div>
           <div className="lists">
-            <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
             <li className="font-semibold text-lg inline-block">
+              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               Allied Telesis Endüstriyel Switchler
             </li>
           </div>
           <div className="lists">
-            <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
             <li className="font-semibold text-lg inline-block">
+              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               Allied Telesis Endüstriyel SFP Modüller
             </li>
           </div>
           <div className="lists">
-            <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
             <li className="font-semibold text-lg inline-block">
+              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               FO Patch Kablolar
             </li>
           </div>
           <div className="lists">
-            <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
             <li className="font-semibold text-lg inline-block">
+              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               Rack Kabinetler
             </li>
           </div>
           <div className="lists">
-            <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
             <li className="font-semibold text-lg inline-block">
+              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               Necron UPS cihazları
             </li>
           </div>
@@ -95,72 +97,75 @@ function Datacenter() {
           <hr />
           <ul>
             <div className="lists mt-4">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 AC ve DC Akıllı PDU sistemleri
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 LAN portu üzerinden Uzaktan kontrol ve izleme
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Proje ihtiyaçlarına özgün çıkış akımlarını sınırlandırma
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Proje ihtiyaçlarına göre çıkış portlarını arttırma
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 AC PDU sistemlerde çıkışların röle ile kontrolü
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 DC PDU sistemlerde çıkışların yarı ilketken ile kontrolü
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 AC ve DC Akıllı PDU larda her bir çıkış portundan çekilen akımın
                 uzaktan izlenmesi, kontrolü
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Seçilen portta sınırların dışında akım çekilmesi durumunda alarm
                 üretme
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Masaüstü ve Mobil uygulama yazılımı ile uzaktan kontrol ve
                 izleme
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Bootloader özelliği ile MCU işlemcilerin uzaktan firmware
                 güncellemelerini yapımı
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Yapısal kablolama işlerinde 50 adet PDU üretimlerini başarı ile
                 yaptık.
               </li>

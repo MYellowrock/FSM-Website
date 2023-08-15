@@ -46,68 +46,69 @@ function ElectronicPayment() {
           </div>
           <ul className="mr-20">
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
                 Dokunmatik Ekran
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
                 Endüstriyel PC
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
                 Nakit para alma ünitesi
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
                 Kilitli para saklama kasası
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
                 Therman yazıcı ünitesi
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
                 Self Service POS modülü
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
                 Doküman tarayıcı modülü
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
                 GSM/GPRS Modem bağlantısı
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
                 Ethernet Bağlantısı
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
                 Sunucu ve Uygulama Yazılımı
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
                 Entegrasyon
               </li>
             </div>

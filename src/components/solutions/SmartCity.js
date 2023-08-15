@@ -55,46 +55,48 @@ function SmartCity() {
         </h1>
         <ul>
           <div className="lists">
-            <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
             <li className="font-semibold text-lg inline-block">
+              {" "}
+              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               Radar Teknolojisini kullanarak kavşaktaki Araç ve Nesnelerin
               sayımı, sınıflandırılması ve hızlarının tespiti
             </li>
           </div>
           <div className="lists">
-            <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
             <li className="font-semibold text-lg inline-block">
+              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               Geldiği konumdan gitmekte olduğu güzergahın çıkarılması
             </li>
           </div>
           <div className="lists">
-            <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
             <li className="font-semibold text-lg inline-block">
+              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               Her nesneye farklı ID numarası ve farklı renkte gösterme
               işlemlerini yapmaktayız
             </li>
           </div>
           <div className="lists">
-            <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
             <li className="font-semibold text-lg inline-block">
+              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               Bu verilerle kavşakların anlık yoğunluğu
             </li>
           </div>
           <div className="lists">
-            <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
             <li className="font-semibold text-lg inline-block">
+              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               Kavşağın rahatlaması için gerekli ışık sürelerinin hesaplanması
             </li>
           </div>
           <div className="lists">
-            <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
             <li className="font-semibold text-lg inline-block">
+              {" "}
+              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               Tüm kavşakların canlı olarak çalışması
             </li>
           </div>
           <div className="lists">
-            <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
             <li className="font-semibold text-lg inline-block">
+              <TiTickOutline className="inline-block text-4xl text-green-500 mb-2" />
               Her kavşak kendinden sonraki kavşağa gönderdiği trafik yoğunluğunu
               hesaplama özelliklerine sahiptir
             </li>
@@ -135,94 +137,107 @@ function SmartCity() {
           </h1>
           <ul>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Hız bilgi gösterimi tek renk, çift renk (Kırmızı-yeşil), full
                 renk olarak yapılmaktadır.
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Algılanan hız bilgisi limitlerin altında ise Yeşil, üstünde ise
                 Kırmızı renkte yayınlama
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 innosent iSYS Radar sistemine entegrasyon
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Algılama Aralığı *: 5 ... 300m
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Tetikleme alanı *: 20 ... 8m
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Tüm kavşakların canlı olarak çalışması
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Algılama açısı: 40 ° (+/- 20 °)
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Hız ölçümü: 1 ... 300km /s
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Hız ölçüm doğruluğu: 1km / s den az.
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Yön: geri çekilme ve trafiğe yaklaşma
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Sayma hassasiyeti: % 90 hassasiyet
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Sınıflandırma hassasiyeti: % 80 hassasiyet
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Sınıflar: 2 + 1 (binek araç, kamyon, diğerleri)
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Güncelleme süresi: 60ms
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Koruma sınıfı: IP67
               </li>
             </div>
@@ -273,87 +288,92 @@ function SmartCity() {
         </div>
       </Slider>
 
-
       <div className="responsive-class flex justify-center items-center">
         <div id="infos">
           <h1 className="text-2xl font-bold cursorCity mb-8 mt-24">
             RADAR HIZ UYARI SİSTEMLERİ
           </h1>
-          <h2 className="text-xl font-bold cursorCity">
-            VMS/VTS Sistemler
-          </h2>
+          <h2 className="text-xl font-bold cursorCity">VMS/VTS Sistemler</h2>
           <hr />
           <ul>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Kullanım alanına göre özel tasarım
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Kullanım alanına göre özel tasarım
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Düşük enerji tüketimi
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Güneş enerjisi seçeneği
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Güneş enerjisi seçeneği
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Tek yada Full renk opsiyonu
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Tek yada Full renk opsiyonu
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Kolay montaj olanağı
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Bluetooth bağlantı ile ön cepheden uzaktan bakım
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Bluetooth bağlantı ile ön cepheden uzaktan bakım
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Yüksek duyarlılık için dar açı radar seçeneği
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Yüksek duyarlılık için dar açı radar seçeneği
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Tek ünite veya bütün ağ için merkezi kontrol seçeneği
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Tek ünite veya bütün ağ için merkezi kontrol seçeneği
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Değerlendirme ve istatistik için bütün değerlerin saklanması
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Değerlendirme ve istatistik için bütün değerlerin saklanması
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Yansımayı önlemek için özel ön cephe dizaynı
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Yansımayı önlemek için özel ön cephe dizaynı
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Akıllı hata tespit sistemi
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Akıllı hata tespit sistemi
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              GSM ve Ethernet ile uzak bağlantı
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                GSM ve Ethernet ile uzak bağlantı
               </li>
             </div>
           </ul>
@@ -369,7 +389,6 @@ function SmartCity() {
         </div>
       </div>
 
-
       <div className="responsive-class flex justify-center items-center my-24">
         <div className="flex flex-col items-center justify-center mx-12">
           <img
@@ -384,45 +403,47 @@ function SmartCity() {
           <h1 className="text-2xl font-bold cursorCity mb-8 mt-24">
             DEĞİŞKEN TRAFİK İŞARETLERİ (VTS)
           </h1>
-          <h2 className="text-xl font-bold cursorCity">
-            VMS/VTS Sistemler
-          </h2>
+          <h2 className="text-xl font-bold cursorCity">VMS/VTS Sistemler</h2>
           <hr />
           <ul>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              İstenilen ölçülerde tasarım.
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                İstenilen ölçülerde tasarım.
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Uzaktan kablosuz (bluetooth) kontrol ile servis kolaylığı 
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Uzaktan kablosuz (bluetooth) kontrol ile servis kolaylığı
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Tarama ile düşük enerji tüketimi 
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Tarama ile düşük enerji tüketimi
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Alarm durumuna göre çalışma şartları oluşturma
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Alarm durumuna göre çalışma şartları oluşturma
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              IP67 outdoor kasa
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                IP67 outdoor kasa
               </li>
             </div>
           </ul>
         </div>
       </div>
-
 
       <div className="responsive-class flex justify-center items-center my-36">
         <div id="infos">
@@ -435,33 +456,40 @@ function SmartCity() {
           <hr />
           <ul>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              2 araç kapasiteli zemine 8-10-12-14 veya 16 araç kapasiteli asansör otopark ile yerden tasarruf etmenizi sağlar
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                2 araç kapasiteli zemine 8-10-12-14 veya 16 araç kapasiteli
+                asansör otopark ile yerden tasarruf etmenizi sağlar
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Girişte aracın plakası okunur
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Girişte aracın plakası okunur
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Asansör gelen aracı alıp yükü dengeli dağıtarak boş kabini giriş alanına getirir
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Asansör gelen aracı alıp yükü dengeli dağıtarak boş kabini giriş
+                alanına getirir
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Çıkacak araç istendiğinde sistem aracı en alt kata getirerek çıkışına imkan tanır
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Çıkacak araç istendiğinde sistem aracı en alt kata getirerek
+                çıkışına imkan tanır
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Elektronik ücret toplamasını self servis ödeme noktaları size özgü kartlar üzerinden online tahsilat gerçekleştirebilirsiniz
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Elektronik ücret toplamasını self servis ödeme noktaları size
+                özgü kartlar üzerinden online tahsilat gerçekleştirebilirsiniz
               </li>
             </div>
           </ul>
@@ -476,7 +504,6 @@ function SmartCity() {
           />
         </div>
       </div>
-
 
       <div className="responsive-class flex justify-center items-center my-24">
         <div className="flex flex-col items-center justify-center mx-12">
@@ -494,63 +521,72 @@ function SmartCity() {
           </h1>
           <ul>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Sensörler ile araç algılama
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Sensörler ile araç algılama
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Algılanan araç park yeri için Dolu/Boş sinyal lambası
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Algılanan araç park yeri için Dolu/Boş sinyal lambası
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Yönlendirme VTS işaretlerle boş park bölgelerine yönlendirme
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Yönlendirme VTS işaretlerle boş park bölgelerine yönlendirme
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              VTS bilgilendirme ekranı ile içerideki boş ve dolu park yeri sayısını gösterme
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                VTS bilgilendirme ekranı ile içerideki boş ve dolu park yeri
+                sayısını gösterme
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Plaka tanıma sistem entegrasyonu
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Plaka tanıma sistem entegrasyonu
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Gişe uygulamalı sistemler için bilet makinası ve turnike entegrasyonu
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Gişe uygulamalı sistemler için bilet makinası ve turnike
+                entegrasyonu
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              İhtiyaçlarınıza özgün Elektronik Ücret Toplama
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                İhtiyaçlarınıza özgün Elektronik Ücret Toplama
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Mevcut toplu ulaşım kartlarından bakiye düşebilme özelliği
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Mevcut toplu ulaşım kartlarından bakiye düşebilme özelliği
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Özel abonelik kartı entegrasyonu
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Özel abonelik kartı entegrasyonu
               </li>
             </div>
           </ul>
         </div>
       </div>
-
 
       <div className="responsive-class flex justify-center items-center my-36">
         <div id="infos">
@@ -559,51 +595,61 @@ function SmartCity() {
           </h1>
           <ul>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Açık otopark sistemlerinde outdoor kamera ile araç algılama 
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Açık otopark sistemlerinde outdoor kamera ile araç algılama
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Algılanan araç bilgisi görüntü işleme ile sayısallaştırma
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Algılanan araç bilgisi görüntü işleme ile sayısallaştırma
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Bulk yada PTZ kamera ile alanlardaki araç boş/doluluk sayılarını çıkarma
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Bulk yada PTZ kamera ile alanlardaki araç boş/doluluk sayılarını
+                çıkarma
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Kamera sistemi online ve ofline çalışma özelliği ile sürekli çalışmayı destekler
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Kamera sistemi online ve ofline çalışma özelliği ile sürekli
+                çalışmayı destekler
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Merkez sunucu ile kablolu yada kablosuz bağlantı imkanı 
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Merkez sunucu ile kablolu yada kablosuz bağlantı imkanı
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Kamera kabini içerinde gömülü sistem kartlar ile yerinde veri işleme özelliği 
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Kamera kabini içerinde gömülü sistem kartlar ile yerinde veri
+                işleme özelliği
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Büyük ve küçük ölçekli her türlü otoparklarda işletme maliyeti düşüktür
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Büyük ve küçük ölçekli her türlü otoparklarda işletme maliyeti
+                düşüktür
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
-              Kazı vb dış etmenlerle sensör arızalarına son
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
+                Kazı vb dış etmenlerle sensör arızalarına son
               </li>
             </div>
           </ul>
@@ -619,8 +665,10 @@ function SmartCity() {
         </div>
       </div>
 
-
-      <div id="solutions-footer" className="responsive-class flex items-center justify-around">
+      <div
+        id="solutions-footer"
+        className="responsive-class flex items-center justify-around"
+      >
         <div>
           <h1 className="text-2xl font-semibold my-4">
             Milli Park HGS ve Otogar Ücret Göstergesi
@@ -628,44 +676,50 @@ function SmartCity() {
           <hr />
           <ul>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 32 bit MCU tabanlı
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Endüstriyel Led Modül Ekran
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Gömülü sistem mimarisi
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Ethernet bağlantı özelliği
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Kırmızı Yeşil Trafik lamba özelliği
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Uzaktan kontrol ve yönetim özelliği
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 5 Milli park sahasına kurulumu yapıldı.
               </li>
             </div>
@@ -676,44 +730,49 @@ function SmartCity() {
           <hr />
           <ul>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 32 bit MCU tabanlı
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Endüstriyel Led Modül Ekran
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Gömülü sistem mimarisi
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Ethernet bağlantı özelliği
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Online – offline çalışabilme
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Uzaktan kontrol ve yönetim özelliği
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Türkiye’de 186 çıkış gişesine kuruldu
               </li>
             </div>
@@ -727,68 +786,75 @@ function SmartCity() {
           <hr />
           <ul>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 MCU Tabanlı
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Endüstriyel tasarım
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 WiFi/Ethernet özelliği
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Online – offline çalışabilme
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 EÜTS Validatör ile entegrasyon
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 MCU Bootloader ile uzaktan güncelleme
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Internet bağlantı ile uzaktan kontrol ve izleme
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 PWM tekniği ile led parlaklığını ayarlama
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Ön Yan ve Arka panel ile yolcu bilgilendirme
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Paneller arası kablolu ve kablosuz veri iletimi
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
               <li className="font-semibold text-md inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
                 Panellerin Validatör ile kontrolü
               </li>
             </div>

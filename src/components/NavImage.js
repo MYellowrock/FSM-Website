@@ -1,4 +1,4 @@
-import backgroundImage from "../image/ecard.png";
+import backgroundImage from "../image/navbargif1.gif";
 import "../styles/navImage.css";
 
 function NavImage() {
@@ -9,7 +9,7 @@ function NavImage() {
       };
     
     return (
-        <div id="nav-image" style={backgroundStyles} className="w-full mt-36">
+        <div id="nav-image" style={backgroundStyles} className="w-full">
             
         </div>
     )

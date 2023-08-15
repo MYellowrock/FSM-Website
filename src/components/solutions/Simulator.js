@@ -38,64 +38,71 @@ function Simulator() {
           </h1>
           <ul>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Gerçek tam kabin oto donanımı
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Frenli Servo motor kontrollü actuator motion platform
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Payload 1500Kg 6 Dof Motion Platform
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Oyun ve eğitmen Bilgisayar sistemleri
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 4 LCD Ekran ile gerçek kullanım hissi
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Araç içi göstergeler ve elektrikli tüm donanımın araç beyni
                 üzerinden gerçek zamanlı kontroller
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 POMEM okulları için Hyundai Accent Era ekip Otosu simülatörü (5
                 Adet)
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 BTR80 Zırhlı Personel Taşıyıcı Simülatörü (1 Adet)
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Kamaz Askeri araç simülatörü (1 Adet)
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Toyota Hilux simülatörü (1 Adet)
               </li>
             </div>
@@ -142,82 +149,92 @@ function Simulator() {
           </h1>
           <ul>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 3 Dof motion platform
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Fiberglass kokpit
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 3 IPS LCD Ekran
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 PC GTX1050 OC
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Online UPS ise kesintisiz eğitim
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 İleri geri ayarlanabilir koltuk
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Logitech Flight Yoke System and Pedals
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Harici monitör ile eğitimi dışarıdan izleme
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Simulator için harici 192 adet kontrol butonlu dashboard
                 tasarımı
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Klavye+Mouse kullanmadan, kontrol butonları üzerinden simülatörü
                 çalıştırma ve kontrol
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Microsoft flight simulator ve X-plane ile uyumlu
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Uçak simülatör oyunlarına kolay entegrasyon
               </li>
             </div>
             <div className="lists my-2">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Havacılık Meslek Liseleri, üniversiteler ve Eğlence merkezleri
                 için ihtiyaçlara özgün özel çözümler üretmekteyiz.
               </li>
@@ -237,39 +254,43 @@ function Simulator() {
           <hr />
           <ul>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Kendi tasarımımız actuator ve redüktörlü motion platform üretimi
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 İstenilen payload değerinde platform üretimi
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Servo motor kontrollü platformlar
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Kendi tasarımımız 32 bir MCU ile servo motor kontrol
                 çözümlerimiz
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Servis bakım kolaylığı için test arayüz yazılımımız
               </li>
             </div>
             <div className="lists">
-              <TiTickOutline className="inline-block text-4xl text-green-500" />
               <li className="font-semibold text-lg inline-block">
+                {" "}
+                <TiTickOutline className="inline-block text-4xl text-green-500" />
                 Platformun Simülasyon oyununa entegrasyonu için gerekli
                 haberleşme ve data paket entegrasyonu
               </li>

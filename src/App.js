@@ -65,9 +65,9 @@ function App() {
 function MainPage() {
   return (
     <>
+      <NavImage />
       <Title1 />
       <ProductSlider />
-      <NavImage />
       <Info />
       <Info2 />
       <Commercial />
