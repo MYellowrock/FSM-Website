@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .communication-class {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .communication-map {
+        width: 400px;
+        height: 400px;
+    }
+}

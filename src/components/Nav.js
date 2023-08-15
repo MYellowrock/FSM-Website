@@ -4,10 +4,11 @@ import "../styles/nav.css";
 import fsmLogo from "../image/fsmLogo.png";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { Link } from "react-router-dom";
-
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Nav = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [onButton, setOnButton] = useState(true);
 
   const scrollToSolutions = (e) => {
     e.preventDefault();
@@ -116,131 +117,151 @@ const Nav = () => {
     setActiveDropdown(null);
   };
 
+  const handleToggle = () => {
+    setOnButton(!onButton);
+  };
+
   return (
     <nav id="nav-bar">
       <div className="logoPlusNavbar flex items-center bg-white fixed w-full border-solid border-2 rounded-lg z-20">
-        <div
-          id="logo"
-          className="logo-class flex items-center justify-center mr-24"
-        >
+        <div id="logo" className="logo-class flex items-center justify-center">
           <a href="/">
             <img src={logo} alt="FSM logo" />
           </a>
+          <button
+                onClick={handleToggle}
+                className="navbar-button hidden"
+              >
+                <GiHamburgerMenu className="text-fsm-blue text-4xl"/>
+            </button>
         </div>
-        <div id="navbar-section" className="navbar-section-class ml-24">
+        <div id="navbar-section" className="navbar-section-class">
           <ul className="flex items-center justify-center my-5">
-            <li
-              className={`relative p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue ${
-                activeDropdown === 0 ? "dropdown-open" : ""
-              }`}
-              onMouseEnter={() => showDropdown(0)}
-              onMouseLeave={hideDropdown}
-            >
-              <a
-                className="navbar-texts text-2xl font-semibold flex items-center border-r border-gray-400 pr-8"
-                onClick={scrollToSolutions}
-                href="/"
-              >
-                Çözümlerimiz
-                <IoMdArrowDropdown className="ml-1" />
-              </a>
+            {onButton && (
+              <div className="navbar-list-class flex justify-center items-center">
+                <li
+                  className={`list-element-class relative p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue ${
+                    activeDropdown === 0 ? "dropdown-open" : ""
+                  }`}
+                  onMouseEnter={() => showDropdown(0)}
+                  onMouseLeave={hideDropdown}
+                >
+                  <a
+                    className="solutions-navbar-class navbar-texts text-2xl font-semibold flex items-center border-gray-400"
+                    onClick={scrollToSolutions}
+                    href="/"
+                  >
+                    Çözümlerimiz
+                    <IoMdArrowDropdown className="ml-1" />
+                  </a>
 
-              <div
-                className={`dropdown-menu absolute bg-white border border-fsm-blue mt-1 py-2 rounded-lg ${
-                  activeDropdown === 0 ? "" : "hidden"
-                }`}
-              >
-                <Link
-                  to="/smart-stop"
-                  className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
-                >
-                  Akıllı Durak Çözümleri
-                </Link>
-                <Link
-                  to="/smart-city"
-                  className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
-                >
-                  Akıllı Kent Çözümler
-                </Link>
-                <Link
-                  to="/videowall"
-                  className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
-                >
-                  Videowall Ekran
-                </Link>
-                <Link
-                  to="/electronic-payment"
-                  className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
-                >
-                  Elektronik Ücret Toplama
-                </Link>
-                <Link
-                  to="/simulator"
-                  className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
-                >
-                  Simülatörler
-                </Link>
-                <Link
-                  to="/security"
-                  className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
-                >
-                  Güvenlik Çözümleri
-                </Link>
-                <Link
-                  to="/mobile-hospital"
-                  className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
-                >
-                  Mobil Hastane
-                </Link>
-                <Link
-                  to="/datacenter"
-                  className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
-                >
-                  Datacenter
-                </Link>
+                  <div
+                    className={`dropdown-menu absolute bg-white border border-fsm-blue mt-1 py-2 rounded-lg ${
+                      activeDropdown === 0 ? "" : "hidden"
+                    }`}
+                  >
+                    <Link
+                      to="/smart-stop"
+                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                    >
+                      Akıllı Durak Çözümleri
+                    </Link>
+                    <Link
+                      to="/smart-city"
+                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                    >
+                      Akıllı Kent Çözümler
+                    </Link>
+                    <Link
+                      to="/videowall"
+                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                    >
+                      Videowall Ekran
+                    </Link>
+                    <Link
+                      to="/electronic-payment"
+                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                    >
+                      Elektronik Ücret Toplama
+                    </Link>
+                    <Link
+                      to="/simulator"
+                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                    >
+                      Simülatörler
+                    </Link>
+                    <Link
+                      to="/security"
+                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                    >
+                      Güvenlik Çözümleri
+                    </Link>
+                    <Link
+                      to="/mobile-hospital"
+                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                    >
+                      Mobil Hastane
+                    </Link>
+                    <Link
+                      to="/datacenter"
+                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                    >
+                      Datacenter
+                    </Link>
+                  </div>
+                </li>
+                <li className="list-element-class p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
+                  <a
+                    className="navbar-texts text-lg font-semibold"
+                    onClick={scrollToInfo}
+                    href="/"
+                  >
+                    Hakkımızda
+                  </a>
+                </li>
+                <li className="list-element-class p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
+                  <Link
+                    to="/news"
+                    className="navbar-texts text-lg font-semibold"
+                  >
+                    Haberler
+                  </Link>
+                </li>
+                <li className="list-element-class p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
+                  <Link
+                    to="/human-sources"
+                    className="navbar-texts text-lg font-semibold"
+                  >
+                    İnsan Kaynakları
+                  </Link>
+                </li>
+                <li className="list-element-class p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
+                  <Link
+                    to="/online"
+                    className="navbar-texts text-lg font-semibold"
+                  >
+                    Online İşlemler
+                  </Link>
+                </li>
+                <li className="list-element-class p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
+                  <Link
+                    to="/shop"
+                    className="navbar-texts text-lg font-semibold"
+                  >
+                    Mağaza
+                  </Link>
+                </li>
+                <li className="list-element-class p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
+                  <a
+                    className="navbar-texts text-lg font-semibold"
+                    onClick={scrollToContact}
+                    href="/"
+                  >
+                    İletişim
+                  </a>
+                </li>
               </div>
-            </li>
-            <li className="p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
-              <a
-                className="navbar-texts text-lg font-semibold"
-                onClick={scrollToInfo}
-                href="/"
-              >
-                Hakkımızda
-              </a>
-            </li>
-            <li className="p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
-              <Link to="/news" className="navbar-texts text-lg font-semibold">
-                Haberler
-              </Link>
-            </li>
-            <li className="p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
-              <Link
-                to="/human-sources"
-                className="navbar-texts text-lg font-semibold"
-              >
-                İnsan Kaynakları
-              </Link>
-            </li>
-            <li className="p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
-              <Link to="/online" className="navbar-texts text-lg font-semibold">
-                Online İşlemler
-              </Link>
-            </li>
-            <li className="p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
-              <Link to="/shop" className="navbar-texts text-lg font-semibold">
-                Mağaza
-              </Link>
-            </li>
-            <li className="p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
-              <a
-                className="navbar-texts text-lg font-semibold"
-                onClick={scrollToContact}
-                href="/"
-              >
-                İletişim
-              </a>
-            </li>
+            )}
           </ul>
         </div>
       </div>

@@ -3,32 +3,34 @@
 }
 
 @media (max-width: 768px) {
-    .logo-class, .navbar-section-class {
-        margin: 0;
+
+    .logoPlusNavbar {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
     }
 
-    .navbar-texts {
+    .navbar-list-class {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
         margin: 0;
         padding: 0;
-        font-size: 1rem;
-        font-weight: 400;
     }
 
-    .fsm-logo-bottom {
-        width: 48px;
+    .list-element-class {
+        padding: 0;
+        margin: 0;
     }
 
-    .navbar-section-class {
-        display: none; /* Hide the navigation items by default on smaller screens */
-        /* ... other styles ... */
-      }
-    
-      .hamburger-icon {
-        display: block; /* Show the hamburger icon on smaller screens */
-        /* ... icon styles ... */
-      }
-    
-      .navbar-section-class.open {
-        display: block; /* Show the navigation items when menu is open */
-      }
+    .solutions-navbar-class {
+        margin-bottom: 12px;
+    }
+
+    .navbar-button {
+        display: flex;
+    }
+
   }
