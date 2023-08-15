@@ -10,13 +10,13 @@ function Ik() {
         <Link to="/hiring">
           <div className="hiring-intern p-24 border-4 border-solid border-black rounded-3xl flex flex-col justify-center items-center hover:bg-fsm-blue hover:text-white hover:ease-in hover:duration-600">
             <MdWorkOutline className="text-center text-5xl mb-4" />
-            <h1 className="font-semibold text-2xl text-center">İş İlanı</h1>
+            <h1 className="font-semibold text-2xl text-center">İş Başvurusu</h1>
           </div>
         </Link>
         <Link to="/intern">
           <div className="hiring-intern p-24 border-4 border-solid border-black rounded-3xl flex flex-col justify-center items-center hover:bg-fsm-blue hover:text-white hover:ease-in hover:duration-600">
             <PiStudentBold className="text-center text-5xl mb-4" />
-            <h1 className="font-semibold text-2xl text-center">Stajyer İlanı</h1>
+            <h1 className="font-semibold text-2xl text-center">Stajyer Başvurusu</h1>
           </div>
         </Link>
       </div>

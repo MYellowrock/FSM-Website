@@ -4,7 +4,7 @@ function Hiring() {
         <div id="human-sources-form">
           <form className="my-24">
             <label className="block text-center">
-              <span className="block text-xl font-semibold mb-2">Name</span>
+              <span className="block text-xl font-semibold mb-2">İsim</span>
               <input
                 type="text"
                 className="peer border-2 rounded-2xl p-4 w-[256px] text-center"
@@ -14,7 +14,7 @@ function Hiring() {
             </label>
   
             <label className="block text-center mt-6">
-              <span className="block text-xl font-semibold mb-2">Surname</span>
+              <span className="block text-xl font-semibold mb-2">Soyisim</span>
               <input
                 type="text"
                 className="peer border-2 rounded-2xl p-4 w-[256px] text-center"
@@ -35,7 +35,7 @@ function Hiring() {
   
             <label className="block text-center mt-6">
               <span className="block text-xl font-semibold mb-2">
-                Phone Number
+                Telefon Numarası
               </span>
               <input
                 type="tel"
@@ -46,7 +46,7 @@ function Hiring() {
             </label>
   
             <label className="block text-center mt-6">
-            <span className="block text-xl font-semibold mb-2">School</span>
+            <span className="block text-xl font-semibold mb-2">Okul</span>
             <input
               type="text"
               className="peer border-2 rounded-2xl p-4 w-[256px] text-center"
@@ -57,7 +57,7 @@ function Hiring() {
 
           <label className="block text-center mt-6">
               <span className="block text-xl font-semibold mb-2">
-                GPA
+                Mezun Not Ortalaması
               </span>
               <input
                 type="tel"
@@ -68,21 +68,21 @@ function Hiring() {
             </label>
 
             <label className="block text-center mt-6">
-              <span className="block text-xl font-semibold mb-2">Gender</span>
+              <span className="block text-xl font-semibold mb-2">Cinsiyet</span>
               <div className="flex justify-center items-center">
                 <label className="mr-4">
                   <input type="radio" name="gender" value="male" />
-                  <span className="ml-2">Male</span>
+                  <span className="ml-2">Erkek</span>
                 </label>
                 <label>
                   <input type="radio" name="gender" value="female" />
-                  <span className="ml-2">Female</span>
+                  <span className="ml-2">Kadın</span>
                 </label>
               </div>
             </label>
 
             <label className="block text-center mt-6">
-            <span className="block text-xl font-semibold mb-2">Picture</span>
+            <span className="block text-xl font-semibold mb-2">Resim</span>
             <input type="file" accept="image/*" className="peer text-center" name="picture"/>
           </label>
 
@@ -92,10 +92,10 @@ function Hiring() {
           </label>
 
             <label className="block text-center mt-6">
-              <span className="block text-xl font-semibold mb-2">Comments</span>
+              <span className="block text-xl font-semibold mb-2">Yorum</span>
               <textarea
                 className="peer border-2 rounded-2xl p-4 w-1/2 h-32 text-center"
-                placeholder="Enter your comments"
+                placeholder="Bize görüşlerinizi bildiriniz..."
                 name="comments"
               />
             </label>

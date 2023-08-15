@@ -36,6 +36,9 @@ function SmartStop() {
     { lat: 38.3552, lng: 38.3095, name: "Malatya", category: "city" },
     { lat: 38.68, lng: 39.2264, name: "Elazığ", category: "city" },
     { lat: 37.8875, lng: 40.9881, name: "Batman", category: "city" },
+    { lat: 38.4924, lng: 43.3831, name: "Van", category: "city" },
+    { lat: 41.1975, lng: 32.6254, name: "Karabük", category: "city" },
+    { lat: 40.978, lng: 27.5145, name: "Tekirdağ", category: "city" },
   ];
   return (
     <div id="smart-stop">
