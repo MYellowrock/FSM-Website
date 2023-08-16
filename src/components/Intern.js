@@ -1,131 +1,207 @@
+import React, { useState } from "react";
+
 function Intern() {
+  const [name, setName] = useState("");
+  const [surname, setSurname] = useState("");
+  const [mail, setMail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [school, setSchool] = useState("");
+  const [level, setLevel] = useState("");
+  const [grade, setGrade] = useState("");
+  const [gender, setGender] = useState("");
+  const [comment, setComment] = useState("");
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleSurnameChange = (event) => {
+    setSurname(event.target.value);
+  };
+
+  const handleMailChange = (event) => {
+    setMail(event.target.value);
+  };
+
+  const handlePhoneChange = (event) => {
+    setPhone(event.target.value);
+  };
+
+  const handleSchoolChange = (event) => {
+    setSchool(event.target.value);
+  };
+
+  const handleLevelChange = (event) => {
+    setLevel(event.target.value);
+  };
+
+  const handleGradeChange = (event) => {
+    setGrade(event.target.value);
+  };
+
+  const handleGenderChange = (event) => {
+    setGender(event.target.value);
+  };
+
+  const handleCommentChange = (event) => {
+    setComment(event.target.value);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("surname", surname);
+    formData.append("mail", mail);
+    formData.append("phone", phone);
+    formData.append("school", school);
+    formData.append("level", level);
+    formData.append("grade", grade);
+    formData.append("gender", gender);
+    formData.append("comment", comment);
+
+    try {
+      const response = await fetch("http://localhost/phpDocument/intern.php", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+      if (data.message) {
+        console.log("Başvuru başarıyla tamamlandı:", data.message);
+      } else if (data.error) {
+        console.error("Hata:", data.error);
+      }
+    } catch (error) {
+      console.error("Hata:", error);
+    }
+
+    setName("");
+    setSurname("");
+    setMail("");
+    setPhone("");
+    setSchool("");
+    setLevel("");
+    setGrade("");
+    setGender("");
+    setComment("");
+
+    alert("Başarılı");
+  };
+
   return (
-    <div id="intern">
-      <div id="human-sources-form">
-        <form className="my-24" action="/intern.php" method="post">
-          <label className="block text-center">
-            <span className="block text-xl font-semibold mb-2">İsim</span>
+    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      <div className="bg-white p-8 rounded-lg shadow-md w-96">
+        <h2 className="text-2xl font-semibold mb-4">Stajyer Başvurusu</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              İsim:
+            </label>
             <input
               type="text"
-              className="peer border-2 rounded-2xl p-4 w-[256px] text-center"
-              placeholder="First Name"
-              name="name"
+              value={name}
+              onChange={handleNameChange}
+              className="border rounded-lg px-3 py-2 w-full"
             />
-          </label>
-
-          <label className="block text-center mt-6">
-            <span className="block text-xl font-semibold mb-2">Soyisim</span>
+          </div>
+          <div className="mb-6">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Soyisim:
+            </label>
             <input
               type="text"
-              className="peer border-2 rounded-2xl p-4 w-[256px] text-center"
-              placeholder="Last Name"
-              name="surname"
+              value={surname}
+              onChange={handleSurnameChange}
+              className="border rounded-lg px-3 py-2 w-full"
             />
-          </label>
-
-          <label className="block text-center mt-6">
-            <span className="block text-xl font-semibold mb-2">Email</span>
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Mail:
+            </label>
             <input
               type="email"
-              className="peer border-2 rounded-2xl p-4 w-[256px] text-center"
-              placeholder="Email"
-              name="email"
+              value={mail}
+              onChange={handleMailChange}
+              className="border rounded-lg px-3 py-2 w-full"
             />
-          </label>
-
-          <label className="block text-center mt-6">
-            <span className="block text-xl font-semibold mb-2">
-              Telefon Numarası
-            </span>
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Telefon Numarası:
+            </label>
             <input
               type="tel"
-              className="peer border-2 rounded-2xl p-4 w-[256px] text-center"
-              placeholder="Phone Number"
-              name="phone"
+              value={phone}
+              onChange={handlePhoneChange}
+              className="border rounded-lg px-3 py-2 w-full"
             />
-          </label>
-
-          <label className="block text-center mt-6">
-            <span className="block text-xl font-semibold mb-2">Okul</span>
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Okul:
+            </label>
             <input
               type="text"
-              className="peer border-2 rounded-2xl p-4 w-[256px] text-center"
-              placeholder="School"
-              name="school"
+              value={school}
+              onChange={handleSchoolChange}
+              className="border rounded-lg px-3 py-2 w-full"
             />
-          </label>
-
-          <label className="block text-center mt-6">
-            <span className="block text-xl font-semibold mb-2">Sınıf</span>
-            <div className="flex justify-center items-center">
-              <label className="mr-4">
-                <input type="radio" name="grade" value="first" />
-                <span className="mx-2">1</span>
-              </label>
-              <label className="mr-4">
-                <input type="radio" name="grade" value="second" />
-                <span className="mx-2">2</span>
-              </label>
-              <label className="mr-4">
-                <input type="radio" name="grade" value="third" />
-                <span className="mx-2">3</span>
-              </label>
-              <label className="mr-4">
-                <input type="radio" name="grade" value="fourth" />
-                <span className="mx-2">4</span>
-              </label>
-            </div>
-          </label>
-
-          <label className="block text-center mt-6">
-              <span className="block text-xl font-semibold mb-2">
-                Not Ortalaması
-              </span>
-              <input
-                type="tel"
-                className="peer border-2 rounded-2xl p-4 w-[256px] text-center"
-                placeholder="GPA (4'lük sistemde)"
-                name="phone"
-              />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Sınıf:
             </label>
-
-          <label className="block text-center mt-6">
-            <span className="block text-xl font-semibold mb-2">Cinsiyet</span>
-            <div className="flex justify-center items-center">
-              <label className="mr-4">
-                <input type="radio" name="gender" value="male" />
-                <span className="ml-2">Erkek</span>
-              </label>
-              <label>
-                <input type="radio" name="gender" value="female" />
-                <span className="ml-2">Kadın</span>
-              </label>
-            </div>
-          </label>
-
-          <label className="block text-center mt-6">
-            <span className="block text-xl font-semibold mb-2">Resim</span>
-            <input type="file" accept="image/*" className="peer" name="picture"/>
-          </label>
-
-          <label className="block text-center mt-6">
-            <span className="block text-xl font-semibold mb-2">CV</span>
-            <input type="file" accept="image/*" className="peer text-center" name="cv"/>
-          </label>
-
-          <label className="block text-center mt-6">
-            <span className="block text-xl font-semibold mb-2">Yorum</span>
-            <textarea
-              className="peer border-2 rounded-2xl p-4 w-1/2 h-32 text-center"
-              placeholder="Bize görüşlerinizi bildiriniz..."
-              name="comments"
+            <input
+              type="text"
+              value={level}
+              onChange={handleLevelChange}
+              className="border rounded-lg px-3 py-2 w-full"
             />
-          </label>
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Not Ortalaması:
+            </label>
+            <input
+              type="number"
+              value={grade}
+              onChange={handleGradeChange}
+              step="0.01"
+              className="border rounded-lg px-3 py-2 w-full"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Cinsiyet:
+            </label>
+            <input
+              type="text"
+              value={gender}
+              onChange={handleGenderChange}
+              className="border rounded-lg px-3 py-2 w-full"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">
+              Yorum:
+            </label>
+            <input
+              type="text"
+              value={comment}
+              onChange={handleCommentChange}
+              className="border rounded-lg px-3 py-2 w-full"
+            />
+          </div>
 
-          <button type="submit" className="block mt-6 bg-fsm-blue text-white px-12 py-6 rounded-2xl hover:bg-blue-600 mx-auto">
-            <p className="text-center font-semibold text-xl">Gönder</p>
+          <button
+            type="submit"
+            className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+          >
+            Gönder
           </button>
-
         </form>
       </div>
     </div>
