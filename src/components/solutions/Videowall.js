@@ -2,6 +2,9 @@ import { FaFilePdf } from "react-icons/fa";
 import videowallPdf from "../../fsmVideowall.pdf";
 import { TiTickOutline } from "react-icons/ti";
 import videowall2 from "./solutionsImage/videowall2.jpg";
+import videowalImage from "./solutionsImage/videowallIImage.jpg";
+
+import videowallVideo from "./solutionsImage/videowall.mp4";
 
 function Videowall() {
   return (
@@ -19,13 +22,22 @@ function Videowall() {
           <FaFilePdf class="text-5xl" />
         </a>
       </div>
-
+      <div className="flex flex-col items-center justify-center mx-12">
+          <img
+            src={videowalImage}
+            alt="im-2"
+            width={900}
+            height={900}
+            className="text-center mx-auto"
+          />
+        </div>
       <div className="responsive-class flex justify-center items-center my-24">
         <div id="infos">
           <h2 className="text-xl font-bold cursorCity">
             Videowall Ürün Tanımları
           </h2>
           <hr />
+
           <ul>
             <div className="lists mt-4">
               <li className="font-semibold text-lg inline-block">
@@ -85,6 +97,12 @@ function Videowall() {
           />
         </div>
       </div>
+      <div className="flex flex-col items-center justify-center mx-12">
+      <video controls>
+        <source src={videowallVideo} type="video/mp4" />
+        Tarayıcınız video etiketini desteklemiyor.
+      </video>
+        </div>
     </div>
   );
 }

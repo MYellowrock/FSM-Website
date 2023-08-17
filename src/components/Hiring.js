@@ -50,32 +50,32 @@ function Hiring() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const formData = new FormData();
-    formData.append("name", name);
-    formData.append("surname", surname);
-    formData.append("mail", mail);
-    formData.append("phone", phone);
-    formData.append("school", school);
-    formData.append("level", level);
-    formData.append("grade", grade);
-    formData.append("gender", gender);
-    formData.append("comment", comment);
+    // const formData = new FormData();
+    // formData.append("name", name);
+    // formData.append("surname", surname);
+    // formData.append("mail", mail);
+    // formData.append("phone", phone);
+    // formData.append("school", school);
+    // formData.append("level", level);
+    // formData.append("grade", grade);
+    // formData.append("gender", gender);
+    // formData.append("comment", comment);
 
-    try {
-      const response = await fetch("http://localhost/phpDocument/hiring.php", {
-        method: "POST",
-        body: formData,
-      });
+    // try {
+    //   const response = await fetch("http://localhost/phpDocument/hiring.php", {
+    //     method: "POST",
+    //     body: formData,
+    //   });
 
-      const data = await response.json();
-      if (data.message) {
-        console.log("Başvuru başarıyla tamamlandı:", data.message);
-      } else if (data.error) {
-        console.error("Hata:", data.error);
-      }
-    } catch (error) {
-      console.error("Hata:", error);
-    }
+    //   const data = await response.json();
+    //   if (data.message) {
+    //     console.log("Başvuru başarıyla tamamlandı:", data.message);
+    //   } else if (data.error) {
+    //     console.error("Hata:", data.error);
+    //   }
+    // } catch (error) {
+    //   console.error("Hata:", error);
+    // }
 
     setName("");
     setSurname("");

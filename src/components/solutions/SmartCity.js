@@ -1,6 +1,5 @@
 import "./solutionStyles/solutionsAll.css";
 import { TiTickOutline } from "react-icons/ti";
-import smartCity1 from "./solutionsImage/smartCity1.png";
 import smartCity2 from "./solutionsImage/smartCity2.png";
 import smartCity3 from "./solutionsImage/smartCity3.png";
 import smartCity4 from "./solutionsImage/smartCity4.png";
@@ -252,16 +251,6 @@ function SmartCity() {
         >
           <img
             className="inline-block mx-auto border-solid rounded-2xl"
-            src={smartCity1}
-            alt="im-1"
-          />
-        </div>
-        <div
-          id="smart-stop-solutions"
-          className="flex flex-col items-center justify-center"
-        >
-          <img
-            className="inline-block mx-auto border-solid rounded-2xl"
             src={smartCity2}
             alt="im-2"
           />
@@ -284,6 +273,16 @@ function SmartCity() {
             className="inline-block mx-auto border-solid rounded-2xl"
             src={smartCity4}
             alt="im-4"
+          />
+        </div>
+        <div
+          id="smart-stop-solutions"
+          className="flex flex-col items-center justify-center"
+        >
+          <img
+            className="inline-block mx-auto border-solid rounded-2xl"
+            src={smartCity7}
+            alt="im-7"
           />
         </div>
       </Slider>

@@ -3,6 +3,9 @@ import datacenter1 from "./solutionsImage/datacenter1.png";
 import datacenter2 from "./solutionsImage/datacenter2.png";
 import datacenter3 from "./solutionsImage/datacenter3.png";
 
+import cat from "./solutionsImage/yapisalKablolama.jpg";
+import fiberoptik from "./solutionsImage/fiberoptik.jpg";
+
 function Datacenter() {
   return (
     <div id="datacenter">
@@ -11,7 +14,7 @@ function Datacenter() {
         className="w-full bg-gradient-to-r from-blue-600 to-purple-600 p-4 flex items-center justify-center my-12"
       >
         <h1 className="text-4xl font-bold text-white cursorCity text-center">
-          DATACENTER
+          ZAYIF AKIM VE YAPISAL KABLOLAMA
         </h1>
       </div>
 
@@ -85,6 +88,29 @@ function Datacenter() {
             src={datacenter2}
             alt="im-1"
             className="text-center mx-auto w-[400]"
+          />
+        </div>
+      </div>
+
+      <div className="flex flex-col justify-center items-center my-12">
+        <div className="flex flex-col justify-center items-center my-6">
+          <h1 className="text-lg font-semibold">Fiber optik</h1>
+          <img
+            src={fiberoptik}
+            alt="im-1"
+            width={500}
+            height={600}
+            className="text-center mx-auto rounded-xl"
+          />
+        </div>
+        <div className="flex flex-col justify-center items-center my-6">
+          <h1 className="text-lg font-semibold">Cat Kablolama</h1>
+          <img
+            src={cat}
+            alt="im-1"
+            width={500}
+            height={600}
+            className="text-center mx-auto rounded-xl"
           />
         </div>
       </div>

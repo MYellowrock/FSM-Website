@@ -7,6 +7,10 @@ import smartStop2 from "./solutionsImage/smartStop2.png";
 import smartStop3 from "./solutionsImage/smartStop3.png";
 import smartStop4 from "./solutionsImage/smartStop4.png";
 import smartStop5 from "./solutionsImage/smartStop5.png";
+import smartStop6 from "./solutionsImage/smartStop6.png";
+import smartStop7 from "./solutionsImage/smartStop7.png";
+import smartStop8 from "./solutionsImage/smartStop8.png";
+import smartStop9 from "./solutionsImage/smartStop9.png";
 import Slider from "react-slick";
 
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
@@ -192,6 +196,46 @@ function SmartStop() {
           <img
             className="inline-block mx-auto border-solid rounded-2xl"
             src={smartStop5}
+            alt="im-5"
+          />
+        </div>
+        <div
+          id="smart-stop-solutions"
+          className="flex flex-col items-center justify-center"
+        >
+          <img
+            className="inline-block mx-auto border-solid rounded-2xl"
+            src={smartStop6}
+            alt="im-5"
+          />
+        </div>
+        <div
+          id="smart-stop-solutions"
+          className="flex flex-col items-center justify-center"
+        >
+          <img
+            className="inline-block mx-auto border-solid rounded-2xl"
+            src={smartStop7}
+            alt="im-5"
+          />
+        </div>
+        <div
+          id="smart-stop-solutions"
+          className="flex flex-col items-center justify-center"
+        >
+          <img
+            className="inline-block mx-auto border-solid rounded-2xl"
+            src={smartStop8}
+            alt="im-5"
+          />
+        </div>
+        <div
+          id="smart-stop-solutions"
+          className="flex flex-col items-center justify-center"
+        >
+          <img
+            className="inline-block mx-auto border-solid rounded-2xl"
+            src={smartStop9}
             alt="im-5"
           />
         </div>

@@ -208,6 +208,18 @@ const Nav = () => {
                     >
                       Datacenter
                     </Link>
+                    <Link
+                      to="/datalogger"
+                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                    >
+                      Datalogger
+                    </Link>
+                    <Link
+                      to="/factory-automation"
+                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                    >
+                      Fabrika Otomasyonu
+                    </Link>
                   </div>
                 </li>
                 <li className="list-element-class p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">

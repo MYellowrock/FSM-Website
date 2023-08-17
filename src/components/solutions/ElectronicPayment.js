@@ -5,11 +5,27 @@ import "./solutionStyles/solutionsAll.css";
 import "./solutionStyles/solutionsAll.css";
 import highway1 from "./solutionsImage/highway1.png";
 import highway2 from "./solutionsImage/highway2.png";
+import highway3 from "./solutionsImage/highway3.png";
+import highway4 from "./solutionsImage/highway4.png";
+import highway5 from "./solutionsImage/highway5.png";
 
 import { FaFilePdf } from "react-icons/fa";
 import paymentPdf from "../../paymentPdf.pdf";
 
+import Slider from "react-slick";
+
 function ElectronicPayment() {
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+  };
+
   return (
     <div id="electronic-payment">
       <div
@@ -132,13 +148,59 @@ function ElectronicPayment() {
             OTOYOL ÇÖZÜMLERİ
           </h1>
         </div>
-        <div id="highway-images">
-          <div className="flex flex-col justify-center items-center">
-            <img src={highway1} alt="highway-1" width={1000} className="m-24" />
-            <img src={highway2} alt="highway-2" width={1000} className="m-24" />
-          </div>
-        </div>
       </div>
+      <Slider {...settings} className="my-12">
+        <div
+          id="smart-stop-solutions"
+          className="flex flex-col items-center justify-center"
+        >
+          <img
+            className="inline-block mx-auto border-solid rounded-2xl"
+            src={highway1}
+            alt="im-1"
+          />
+        </div>
+        <div
+          id="smart-stop-solutions"
+          className="flex flex-col items-center justify-center"
+        >
+          <img
+            className="inline-block mx-auto border-solid rounded-2xl"
+            src={highway2}
+            alt="im-2"
+          />
+        </div>
+        <div
+          id="smart-stop-solutions"
+          className="flex flex-col items-center justify-center"
+        >
+          <img
+            className="inline-block mx-auto border-solid rounded-2xl"
+            src={highway3}
+            alt="im-3"
+          />
+        </div>
+        <div
+          id="smart-stop-solutions"
+          className="flex flex-col items-center justify-center"
+        >
+          <img
+            className="inline-block mx-auto border-solid rounded-2xl"
+            src={highway4}
+            alt="im-4"
+          />
+        </div>
+        <div
+          id="smart-stop-solutions"
+          className="flex flex-col items-center justify-center"
+        >
+          <img
+            className="inline-block mx-auto border-solid rounded-2xl"
+            src={highway5}
+            alt="im-5"
+          />
+        </div>
+      </Slider>
     </div>
   );
 }

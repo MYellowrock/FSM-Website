@@ -23,6 +23,9 @@ import Simulator from "./components/solutions/Simulator";
 import Security from "./components/solutions/Security";
 import MobileHospital from "./components/solutions/MobileHospital";
 import Datacenter from "./components/solutions/Datacenter";
+import Datalogger from "./components/solutions/Datalogger";
+import FactoryAutomation from "./components/solutions/FactoryAutomation";
+
 import Communication from "./components/support/Communication";
 import DeliveryAndReturn from "./components/support/DeliveryAndReturn";
 import SalesContract from "./components/support/SalesContract";
@@ -50,6 +53,8 @@ function App() {
         <Route path="security" element={<Security />} />
         <Route path="mobile-hospital" element={<MobileHospital />} />
         <Route path="datacenter" element={<Datacenter />} />
+        <Route path="datalogger" element={<Datalogger />} />
+        <Route path="factory-automation" element={<FactoryAutomation />} />
         <Route path="communication" element={<Communication />} />
         <Route path="delivery-and-return" element={<DeliveryAndReturn />} />
         <Route path="sales-contract" element={<SalesContract />} />
