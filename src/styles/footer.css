@@ -27,6 +27,14 @@
         margin-top: 1rem;
       }
 
+      .footer-title, .footer-list {
+        text-align: center;
+      }
+
+      .footer-title {
+        margin-top: 2rem;
+      }
+
       /* Additional responsive styles as needed */
     }
   }

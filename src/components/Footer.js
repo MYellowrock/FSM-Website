@@ -41,8 +41,8 @@ function Footer() {
     <div id="contact-section" className="footer">
       <div className="info-section my-16 flex justify-around">
         <div className="destek mt-12">
-            <h1 className="text-xl font-semibold">Destek</h1> <hr /> <br />
-          <ul>
+            <h1 className="footer-title text-xl font-semibold">Destek</h1> <hr /> <br />
+          <ul className="footer-list">
             <li className="mb-2 hover:text-fsm-red"><Link to="/security-policy">Gizlilik Politikası</Link></li>
             <li className="mb-2 hover:text-fsm-red"><Link to="/delivery-and-return">Teslimat ve İade Koşulları</Link></li>
             <li className="mb-2 hover:text-fsm-red"><Link to="/sales-contract">Mesafeli Satış Sözleşmesi</Link></li>
@@ -51,8 +51,8 @@ function Footer() {
           </ul>
         </div>
         <div className="çözümlerimiz">
-            <h1 className="text-xl font-semibold">Çözümlerimiz</h1> <hr /> <br />
-            <ul>
+            <h1 className="footer-title text-xl font-semibold">Çözümlerimiz</h1> <hr /> <br />
+            <ul className="footer-list">
                 <li className="mb-2 hover:text-fsm-red"><Link to="/smart-stop">Akıllı Durak Çözümleri</Link></li>
                 <li className="mb-2 hover:text-fsm-red"><Link to="/smart-city">Akıllı Kent Çözümleri</Link></li>
                 <li className="mb-2 hover:text-fsm-red"><Link to="/videowall">Videowall Ekran</Link></li>
@@ -63,7 +63,7 @@ function Footer() {
                 <li className="mb-2 hover:text-fsm-red"><Link to="/datacenter">Datacenter</Link></li>
             </ul>
         </div>
-        <div className="iletişim mt-12">
+        <div className="footer-title iletişim mt-12">
             <h1 className="text-xl font-semibold">İletişim</h1> <hr /> <br />
             <h3>Adres: Macun Mah. Bağdat Cad. Mehmet Emin Erdoğan İş Merkezi No:93 D:65 Yenimahalle/Ankara</h3>
                 <label>Email:</label>

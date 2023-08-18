@@ -5,6 +5,7 @@ import simulator2 from "./solutionsImage/simulator2.png";
 import simulator3 from "./solutionsImage/simulator3.png";
 import simulator4 from "./solutionsImage/simulator4.png";
 import simulator5 from "./solutionsImage/simulator5.png";
+import simulatorVideo from "./solutionsImage/simulator.mp4";
 
 import { FaFilePdf } from "react-icons/fa";
 import simulatorPdf from "../../simulatorPdf.pdf";
@@ -21,6 +22,7 @@ function Simulator() {
         </h1>
       </div>
 
+
       <div class="flex justify-center items-center my-12">
         <a
           href={simulatorPdf}
@@ -29,6 +31,13 @@ function Simulator() {
         >
           <FaFilePdf class="text-5xl" />
         </a>
+      </div>
+
+      <div className="flex flex-col items-center justify-center my-12 mx-12">
+        <video controls className="w-[900px] rounded-xl">
+          <source src={simulatorVideo} type="video/mp4"/>
+          Tarayıcınız video eklentisini desteklemiyor.
+        </video>
       </div>
 
       <div className="responsive-class flex justify-center items-center">

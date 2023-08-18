@@ -2,7 +2,8 @@ import { FaFilePdf } from "react-icons/fa";
 import videowallPdf from "../../fsmVideowall.pdf";
 import { TiTickOutline } from "react-icons/ti";
 import videowall2 from "./solutionsImage/videowall2.jpg";
-import videowalImage from "./solutionsImage/videowallIImage.jpg";
+import videowall4 from "./solutionsImage/videowall4.jpg";
+import videowall5 from "./solutionsImage/videowall5.jpg";
 
 import videowallVideo from "./solutionsImage/videowall.mp4";
 
@@ -14,7 +15,7 @@ function Videowall() {
         className="w-full bg-gradient-to-r from-blue-600 to-purple-600 p-4 flex items-center justify-center my-12"
       >
         <h1 className="text-4xl font-bold text-white cursorCity text-center">
-          VIDEOWALL
+          VIDEOWALL & VIDEO PANEL
         </h1>
       </div>
       <div class="flex justify-center items-center my-12">
@@ -22,10 +23,19 @@ function Videowall() {
           <FaFilePdf class="text-5xl" />
         </a>
       </div>
-      <div className="flex flex-col items-center justify-center mx-12">
+      <div className="flex flex-col items-center justify-center m-12">
           <img
-            src={videowalImage}
-            alt="im-2"
+            src={videowall4}
+            alt="im-4"
+            width={900}
+            height={900}
+            className="text-center mx-auto"
+          />
+        </div>
+        <div className="flex flex-col items-center justify-center m-12">
+          <img
+            src={videowall5}
+            alt="im-5"
             width={900}
             height={900}
             className="text-center mx-auto"
