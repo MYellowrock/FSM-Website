@@ -9,11 +9,15 @@
 
 @media (max-width: 768px) {
 
-    .responsive-class, .smartCityVideo {
+    .responsive-class, .smartCityVideo, .datalogger-image-class {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .ulist-datalogger {
+        margin: 0 12px;
     }
 
 }
