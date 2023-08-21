@@ -1,6 +1,6 @@
 import { TiTickOutline } from "react-icons/ti";
-import datacenter1 from "./solutionsImage/datacenter1.png";
-import datacenter2 from "./solutionsImage/datacenter2.png";
+import datacenter1 from "./solutionsImage/datacenter1.jpg";
+import datacenter2 from "./solutionsImage/datacenter2.jpg";
 import datacenter3 from "./solutionsImage/datacenter3.png";
 
 import cat from "./solutionsImage/yapisalKablolama.jpg";
@@ -31,12 +31,12 @@ function Datacenter() {
         <hr />
       </div>
 
-      <div className="responsive-class flex items-center justify-around">
+      <div className="responsive-class flex my-12 items-center justify-around">
         <div className="flex items-center justify-center">
           <img
             src={datacenter1}
             alt="im-1"
-            className="text-center mx-auto w-[400]"
+            className="text-center mx-auto w-[750px]"
           />
         </div>
         <ul className="mr-20">
@@ -83,14 +83,15 @@ function Datacenter() {
             </li>
           </div>
         </ul>
-        <div className="flex items-center justify-center">
+      </div>
+
+      <div className="flex items-center justify-center my-24 bg-gray-100">
           <img
             src={datacenter2}
             alt="im-1"
-            className="text-center mx-auto w-[400]"
+            className="text-center mx-auto w-[900px] rounded-2xl"
           />
         </div>
-      </div>
 
       <div className="flex flex-col justify-center items-center my-12">
         <div className="flex flex-col justify-center items-center my-6">

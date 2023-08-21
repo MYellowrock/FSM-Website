@@ -25,6 +25,7 @@ import MobileHospital from "./components/solutions/MobileHospital";
 import Datacenter from "./components/solutions/Datacenter";
 import Datalogger from "./components/solutions/Datalogger";
 import FactoryAutomation from "./components/solutions/FactoryAutomation";
+import References from "./components/References";
 
 import Communication from "./components/support/Communication";
 import DeliveryAndReturn from "./components/support/DeliveryAndReturn";
@@ -55,6 +56,7 @@ function App() {
         <Route path="datacenter" element={<Datacenter />} />
         <Route path="datalogger" element={<Datalogger />} />
         <Route path="factory-automation" element={<FactoryAutomation />} />
+        <Route path="references" element={<References />} />
         <Route path="communication" element={<Communication />} />
         <Route path="delivery-and-return" element={<DeliveryAndReturn />} />
         <Route path="sales-contract" element={<SalesContract />} />

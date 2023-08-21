@@ -9,7 +9,7 @@
 
 @media (max-width: 768px) {
 
-    .responsive-class {
+    .responsive-class, .smartCityVideo {
         display: flex;
         flex-direction: column;
         justify-content: center;

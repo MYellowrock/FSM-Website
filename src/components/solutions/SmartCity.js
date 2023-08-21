@@ -16,6 +16,9 @@ import smartCity12 from "./solutionsImage/smartCity12.png";
 import { FaFilePdf } from "react-icons/fa";
 import smartCityPdf from "../../smartCityPdf.pdf";
 
+import radarVideo1 from "./solutionsImage/radarVideo1.mp4";
+import radarVideo2 from "./solutionsImage/radarVideo2.mp4";
+
 function SmartCity() {
   const settings = {
     dots: true,
@@ -46,6 +49,17 @@ function SmartCity() {
         >
           <FaFilePdf class="text-5xl" />
         </a>
+      </div>
+
+      <div className="smartCityVideo flex flex-row items-center justify-center mx-12">
+        <video controls className="w-[700px] mx-12 rounded-3xl">
+          <source src={radarVideo1} type="video/mp4"/>
+          Tarayıcınız video eklentisini desteklemiyor.
+        </video>
+        <video controls className="w-[700px] mx-12 rounded-3xl">
+          <source src={radarVideo2} type="video/mp4"/>
+          Tarayıcınız video eklentisini desteklemiyor.
+        </video>
       </div>
 
       <div id="infos" className="text-center">

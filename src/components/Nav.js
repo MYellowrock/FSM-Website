@@ -139,6 +139,23 @@ const Nav = () => {
           <ul className="flex items-center justify-center my-5">
             {onButton && (
               <div className="navbar-list-class flex justify-center items-center">
+                <li className="list-element-class p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
+                  <a
+                    className="navbar-texts text-lg font-semibold"
+                    onClick={scrollToInfo}
+                    href="/"
+                  >
+                    Hakkımızda
+                  </a>
+                </li>
+                <li className="list-element-class p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
+                  <Link
+                    to="/news"
+                    className="navbar-texts text-lg font-semibold"
+                  >
+                    Haberler
+                  </Link>
+                </li>
                 <li
                   className={`list-element-class relative p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue ${
                     activeDropdown === 0 ? "dropdown-open" : ""
@@ -147,7 +164,7 @@ const Nav = () => {
                   onMouseLeave={hideDropdown}
                 >
                   <a
-                    className="solutions-navbar-class navbar-texts text-2xl font-semibold flex items-center border-gray-400"
+                    className="solutions-navbar-class navbar-texts text-lg font-semibold flex items-center border-gray-400"
                     onClick={scrollToSolutions}
                     href="/"
                   >
@@ -223,23 +240,6 @@ const Nav = () => {
                   </div>
                 </li>
                 <li className="list-element-class p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
-                  <a
-                    className="navbar-texts text-lg font-semibold"
-                    onClick={scrollToInfo}
-                    href="/"
-                  >
-                    Hakkımızda
-                  </a>
-                </li>
-                <li className="list-element-class p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
-                  <Link
-                    to="/news"
-                    className="navbar-texts text-lg font-semibold"
-                  >
-                    Haberler
-                  </Link>
-                </li>
-                <li className="list-element-class p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
                   <Link
                     to="/human-sources"
                     className="navbar-texts text-lg font-semibold"
@@ -271,6 +271,14 @@ const Nav = () => {
                   >
                     İletişim
                   </a>
+                </li>
+                <li className="list-element-class p-3 m-2 border-solid border-gray-100 rounded-lg hover:border-gray-200 hover:text-fsm-blue text-center">
+                  <Link
+                    to="/references"
+                    className="navbar-texts text-lg font-semibold"
+                  >
+                    Referanslarımız
+                  </Link>
                 </li>
               </div>
             )}

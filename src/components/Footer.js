@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "../styles/footer.css";
 
 function Footer() {
-
   const scrollToInfo = (e) => {
     e.preventDefault();
     const infoSection = document.getElementById("info-section");
@@ -41,48 +40,104 @@ function Footer() {
     <div id="contact-section" className="footer">
       <div className="info-section my-16 flex justify-around">
         <div className="destek mt-12">
-            <h1 className="footer-title text-xl font-semibold">Destek</h1> <hr /> <br />
+          <h1 className="footer-title text-xl font-semibold">Destek</h1> <hr />{" "}
+          <br />
           <ul className="footer-list">
-            <li className="mb-2 hover:text-fsm-red"><Link to="/security-policy">Gizlilik Politikası</Link></li>
-            <li className="mb-2 hover:text-fsm-red"><Link to="/delivery-and-return">Teslimat ve İade Koşulları</Link></li>
-            <li className="mb-2 hover:text-fsm-red"><Link to="/sales-contract">Mesafeli Satış Sözleşmesi</Link></li>
-            <li className="mb-2 hover:text-fsm-red"><a href="/" onClick={scrollToInfo} >Hakkımızda</a></li>
-            <li className="mb-2 hover:text-fsm-red"><Link to="/communication">İletişim</Link></li>
+            <li className="mb-2 hover:text-fsm-red">
+              <Link to="/security-policy">Gizlilik Politikası</Link>
+            </li>
+            <li className="mb-2 hover:text-fsm-red">
+              <Link to="/delivery-and-return">Teslimat ve İade Koşulları</Link>
+            </li>
+            <li className="mb-2 hover:text-fsm-red">
+              <Link to="/sales-contract">Mesafeli Satış Sözleşmesi</Link>
+            </li>
+            <li className="mb-2 hover:text-fsm-red">
+              <a href="/" onClick={scrollToInfo}>
+                Hakkımızda
+              </a>
+            </li>
+            <li className="mb-2 hover:text-fsm-red">
+              <Link to="/communication">İletişim</Link>
+            </li>
           </ul>
         </div>
         <div className="çözümlerimiz">
-            <h1 className="footer-title text-xl font-semibold">Çözümlerimiz</h1> <hr /> <br />
-            <ul className="footer-list">
-                <li className="mb-2 hover:text-fsm-red"><Link to="/smart-stop">Akıllı Durak Çözümleri</Link></li>
-                <li className="mb-2 hover:text-fsm-red"><Link to="/smart-city">Akıllı Kent Çözümleri</Link></li>
-                <li className="mb-2 hover:text-fsm-red"><Link to="/videowall">Videowall Ekran</Link></li>
-                <li className="mb-2 hover:text-fsm-red"><Link to="/electronic-payment">Elektronik Ücret Toplama</Link></li>
-                <li className="mb-2 hover:text-fsm-red"><Link to="/simulator">Simulatörler</Link></li>
-                <li className="mb-2 hover:text-fsm-red"><Link to="/security">Güvenlik Çözümleri</Link></li>
-                <li className="mb-2 hover:text-fsm-red"><Link to="/mobile-hospital">Mobil Hastane</Link></li>
-                <li className="mb-2 hover:text-fsm-red"><Link to="/datacenter">Datacenter</Link></li>
-            </ul>
+          <h1 className="footer-title text-xl font-semibold">Çözümlerimiz</h1>{" "}
+          <hr /> <br />
+          <ul className="footer-list">
+            <li className="mb-2 hover:text-fsm-red">
+              <Link to="/smart-stop">Akıllı Durak Çözümleri</Link>
+            </li>
+            <li className="mb-2 hover:text-fsm-red">
+              <Link to="/smart-city">Akıllı Kent Çözümleri</Link>
+            </li>
+            <li className="mb-2 hover:text-fsm-red">
+              <Link to="/videowall">Videowall Ekran</Link>
+            </li>
+            <li className="mb-2 hover:text-fsm-red">
+              <Link to="/electronic-payment">Elektronik Ücret Toplama</Link>
+            </li>
+            <li className="mb-2 hover:text-fsm-red">
+              <Link to="/simulator">Simulatörler</Link>
+            </li>
+            <li className="mb-2 hover:text-fsm-red">
+              <Link to="/security">Güvenlik Çözümleri</Link>
+            </li>
+            <li className="mb-2 hover:text-fsm-red">
+              <Link to="/mobile-hospital">Mobil Hastane</Link>
+            </li>
+            <li className="mb-2 hover:text-fsm-red">
+              <Link to="/datacenter">Datacenter</Link>
+            </li>
+          </ul>
         </div>
         <div className="footer-title iletişim mt-12">
-            <h1 className="text-xl font-semibold">İletişim</h1> <hr /> <br />
-            <h3>Adres: Macun Mah. Bağdat Cad. Mehmet Emin Erdoğan İş Merkezi No:93 D:65 Yenimahalle/Ankara</h3>
-                <label>Email:</label>
-                <a className="mb-1 hover:text-fsm-red" href="mailto:info@fsmbilgi.com"> info@fsmbilgi.com</a> <br />
-                <label>Telefon:</label>
-                <a className="mb-1 hover:text-fsm-red" href="tel:+903123870109"> 0 (312) 387 01 09</a> <br />
+          <h1 className="text-xl font-semibold">İletişim</h1> <hr /> <br />
+          <h3>
+            Adres: Macun Mah. Bağdat Cad. Mehmet Emin Erdoğan İş Merkezi No:93
+            D:65 Yenimahalle/Ankara
+          </h3>
+          <label>Email:</label>
+          <a
+            className="mb-1 hover:text-fsm-red"
+            href="mailto:info@fsmbilgi.com"
+          >
+            {" "}
+            info@fsmbilgi.com
+          </a>{" "}
+          <br />
+          <label>Telefon:</label>
+          <a className="mb-1 hover:text-fsm-red" href="tel:+903123870109">
+            {" "}
+            0 (312) 387 01 09
+          </a>{" "}
+          <br />
         </div>
       </div>
-      <hr/>
-      <div id="last-part" className="py-6 flex flex-col items-center justify-between">
+      <hr />
+      <div
+        id="last-part"
+        className="py-6 flex flex-col items-center justify-between"
+      >
         <div id="copyright">
-          <p>Copyright <AiOutlineCopyright className="inline-block"/> 2023 Bilgi Teknolojileri</p>
+          <p>
+            Copyright <AiOutlineCopyright className="inline-block" /> 2023 Bilgi
+            Teknolojileri
+          </p>
         </div>
         <div className="end-part-copyright">
-          <a href="/" className="inline-block mr-2 hover:text-fsm-red">Gizlilik Politikası</a>
-          <p className="inline-block mr-2 text-2xl font-semibold">-</p> 
-          <a href="/" className="inline-block mr-2 hover:text-fsm-red">Teslimat ve İade Koşulları</a>
+          <a href="/" className="inline-block mr-2 hover:text-fsm-red">
+            Gizlilik Politikası
+          </a>
           <p className="inline-block mr-2 text-2xl font-semibold">-</p>
-          <a href="/" className="inline-block hover:text-fsm-red">Mesafeli Satış Sözleşmesi</a>
+          <a href="/" className="inline-block mr-2 hover:text-fsm-red">
+            Teslimat ve İade Koşulları
+          </a>
+          <p className="inline-block mr-2 text-2xl font-semibold">-</p>
+          <a href="/" className="inline-block hover:text-fsm-red">
+            Mesafeli Satış Sözleşmesi
+          </a>
         </div>
       </div>
     </div>
