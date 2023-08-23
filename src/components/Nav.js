@@ -179,63 +179,63 @@ const Nav = () => {
                   >
                     <Link
                       to="/smart-stop"
-                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                      className="nav-solution-class block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
                     >
                       Akıllı Durak Çözümleri
                     </Link>
                     <Link
                       to="/smart-city"
-                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                      className="nav-solution-class block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
                     >
                       Akıllı Kent Çözümler
                     </Link>
                     <Link
                       to="/videowall"
-                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                      className="nav-solution-class block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
                     >
                       Videowall Ekran
                     </Link>
                     <Link
                       to="/electronic-payment"
-                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                      className="nav-solution-class block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
                     >
                       Elektronik Ücret Toplama
                     </Link>
                     <Link
                       to="/simulator"
-                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                      className="nav-solution-class block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
                     >
                       Simülatörler
                     </Link>
                     <Link
                       to="/security"
-                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                      className="nav-solution-class block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
                     >
                       Güvenlik Çözümleri
                     </Link>
                     <Link
                       to="/mobile-hospital"
-                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                      className="nav-solution-class block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
                     >
                       Mobil Hastane
                     </Link>
                     <Link
                       to="/datacenter"
-                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                      className="nav-solution-class block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
                     >
                       Datacenter
                     </Link>
                     <Link
                       to="/datalogger"
-                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                      className="nav-solution-class block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
                     >
                       Datalogger
                     </Link>
                     <Link
                       to="/factory-automation"
-                      className="block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
+                      className="nav-solution-class block px-4 py-2 text-fsm-blue font-semibold text-md hover:bg-gray-100 text-center"
                     >
-                      Fabrika Otomasyonu
+                      Fabrika Verimliliği
                     </Link>
                   </div>
                 </li>

@@ -33,4 +33,9 @@
         display: flex;
     }
 
+    .nav-solution-class {
+        margin: 0;
+        padding: 0;
+    }
+
   }

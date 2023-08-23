@@ -3,6 +3,8 @@ import ogm from "../image/ogm.png";
 import ptt from "../image/ptt.png";
 import dora from "../image/dora.png";
 import novamed from "../image/novamed.jpg";
+import inetra from "../image/inetra.png";
+import asis from "../image/asis.png";
 
 import "../styles/references.css";
 
@@ -53,6 +55,24 @@ function References() {
               src={novamed}
               alt="novamed"
               width={100}
+              height={100}
+              className="mx-8 footer-logo-class text-center"
+            />
+          </div>
+          <div className="flex justify-center items-center m-4 p-4 border-solid border-4 rounded-2xl border-fsm-blue">
+            <img
+              src={asis}
+              alt="asis"
+              width={100}
+              height={100}
+              className="mx-8 footer-logo-class text-center rounded-2xl"
+            />
+          </div>
+          <div className="flex justify-center items-center m-4 p-4 border-solid border-4 rounded-2xl border-fsm-blue">
+            <img
+              src={inetra}
+              alt="inetra"
+              width={300}
               height={100}
               className="mx-8 footer-logo-class text-center"
             />
