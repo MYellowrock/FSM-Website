@@ -19,6 +19,12 @@ import smartCityPdf from "../../smartCityPdf.pdf";
 import radarVideo1 from "./solutionsImage/radarVideo1.mp4";
 import radarVideo2 from "./solutionsImage/radarVideo2.mp4";
 
+import { motion } from "framer-motion";
+
+import ucretGostergesi from "./solutionsImage/ucretGostergesi.jpg";
+import yolcuEkran from "./solutionsImage/yolcuEkranı.jpg";
+import hgs from "./solutionsImage/hgs.png";
+
 function SmartCity() {
   const settings = {
     dots: true,
@@ -31,7 +37,11 @@ function SmartCity() {
   };
 
   return (
-    <div id="smart-stop">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      id="smart-stop"
+    >
       <div
         id="header-smartStop"
         className="w-full bg-gradient-to-r from-blue-600 to-purple-600 p-4 flex items-center justify-center my-12"
@@ -49,17 +59,6 @@ function SmartCity() {
         >
           <FaFilePdf class="text-5xl" />
         </a>
-      </div>
-
-      <div className="smartCityVideo flex flex-row items-center justify-center mx-12">
-        <video controls className="w-[700px] mx-12 rounded-3xl">
-          <source src={radarVideo1} type="video/mp4"/>
-          Tarayıcınız video eklentisini desteklemiyor.
-        </video>
-        <video controls className="w-[700px] mx-12 rounded-3xl">
-          <source src={radarVideo2} type="video/mp4"/>
-          Tarayıcınız video eklentisini desteklemiyor.
-        </video>
       </div>
 
       <div id="infos" className="text-center">
@@ -680,119 +679,153 @@ function SmartCity() {
 
       <div
         id="solutions-footer"
-        className="responsive-class flex items-center justify-around"
+        className="responsive-class flex flex-col items-center justify-around"
       >
-        <div>
-          <h1 className="text-2xl font-semibold my-4">
-            Milli Park HGS ve Otogar Ücret Göstergesi
-          </h1>
-          <hr />
-          <ul>
-            <div className="lists">
-              <li className="font-semibold text-md inline-block">
-                {" "}
-                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
-                32 bit MCU tabanlı
-              </li>
-            </div>
-            <div className="lists">
-              <li className="font-semibold text-md inline-block">
-                {" "}
-                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
-                Endüstriyel Led Modül Ekran
-              </li>
-            </div>
-            <div className="lists">
-              <li className="font-semibold text-md inline-block">
-                {" "}
-                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
-                Gömülü sistem mimarisi
-              </li>
-            </div>
-            <div className="lists">
-              <li className="font-semibold text-md inline-block">
-                {" "}
-                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
-                Ethernet bağlantı özelliği
-              </li>
-            </div>
-            <div className="lists">
-              <li className="font-semibold text-md inline-block">
-                {" "}
-                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
-                Kırmızı Yeşil Trafik lamba özelliği
-              </li>
-            </div>
-            <div className="lists">
-              <li className="font-semibold text-md inline-block">
-                {" "}
-                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
-                Uzaktan kontrol ve yönetim özelliği
-              </li>
-            </div>
-            <div className="lists">
-              <li className="font-semibold text-md inline-block">
-                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
-                5 Milli park sahasına kurulumu yapıldı.
-              </li>
-            </div>
-          </ul>
+        <div className="flex justify-center items-center my-24">
+          <div className="flex flex-col items-center justify-center mx-12">
+            <img
+              src={ucretGostergesi}
+              alt="im-7"
+              width={500}
+              height={600}
+              className="text-center mx-auto"
+            />
+          </div>
+          <div>
+            <h1 className="text-2xl font-semibold my-4">
+              Milli Park HGS ve Otogar Ücret Göstergesi
+            </h1>
+            <hr />
+            <ul>
+              <div className="lists">
+                <li className="font-semibold text-md inline-block">
+                  {" "}
+                  <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
+                  32 bit MCU tabanlı
+                </li>
+              </div>
+              <div className="lists">
+                <li className="font-semibold text-md inline-block">
+                  {" "}
+                  <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
+                  Endüstriyel Led Modül Ekran
+                </li>
+              </div>
+              <div className="lists">
+                <li className="font-semibold text-md inline-block">
+                  {" "}
+                  <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
+                  Gömülü sistem mimarisi
+                </li>
+              </div>
+              <div className="lists">
+                <li className="font-semibold text-md inline-block">
+                  {" "}
+                  <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
+                  Ethernet bağlantı özelliği
+                </li>
+              </div>
+              <div className="lists">
+                <li className="font-semibold text-md inline-block">
+                  {" "}
+                  <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
+                  Kırmızı Yeşil Trafik lamba özelliği
+                </li>
+              </div>
+              <div className="lists">
+                <li className="font-semibold text-md inline-block">
+                  {" "}
+                  <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
+                  Uzaktan kontrol ve yönetim özelliği
+                </li>
+              </div>
+              <div className="lists">
+                <li className="font-semibold text-md inline-block">
+                  <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
+                  5 Milli park sahasına kurulumu yapıldı.
+                </li>
+              </div>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h1 className="text-2xl font-semibold my-4">HGS Ücret Göstergesi</h1>
-          <hr />
-          <ul>
-            <div className="lists">
-              <li className="font-semibold text-md inline-block">
-                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
-                32 bit MCU tabanlı
-              </li>
-            </div>
-            <div className="lists">
-              <li className="font-semibold text-md inline-block">
-                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
-                Endüstriyel Led Modül Ekran
-              </li>
-            </div>
-            <div className="lists">
-              <li className="font-semibold text-md inline-block">
-                {" "}
-                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
-                Gömülü sistem mimarisi
-              </li>
-            </div>
-            <div className="lists">
-              <li className="font-semibold text-md inline-block">
-                {" "}
-                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
-                Ethernet bağlantı özelliği
-              </li>
-            </div>
-            <div className="lists">
-              <li className="font-semibold text-md inline-block">
-                {" "}
-                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
-                Online – offline çalışabilme
-              </li>
-            </div>
-            <div className="lists">
-              <li className="font-semibold text-md inline-block">
-                {" "}
-                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
-                Uzaktan kontrol ve yönetim özelliği
-              </li>
-            </div>
-            <div className="lists">
-              <li className="font-semibold text-md inline-block">
-                {" "}
-                <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
-                Türkiye’de 186 çıkış gişesine kuruldu
-              </li>
-            </div>
-          </ul>
+        <div className="flex justify-center items-center my-24">
+          <div className="mr-16">
+            <h1 className="text-2xl font-semibold my-4">
+              HGS Ücret Göstergesi
+            </h1>
+            <hr />
+            <ul>
+              <div className="lists">
+                <li className="font-semibold text-md inline-block">
+                  <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
+                  32 bit MCU tabanlı
+                </li>
+              </div>
+              <div className="lists">
+                <li className="font-semibold text-md inline-block">
+                  <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
+                  Endüstriyel Led Modül Ekran
+                </li>
+              </div>
+              <div className="lists">
+                <li className="font-semibold text-md inline-block">
+                  {" "}
+                  <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
+                  Gömülü sistem mimarisi
+                </li>
+              </div>
+              <div className="lists">
+                <li className="font-semibold text-md inline-block">
+                  {" "}
+                  <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
+                  Ethernet bağlantı özelliği
+                </li>
+              </div>
+              <div className="lists">
+                <li className="font-semibold text-md inline-block">
+                  {" "}
+                  <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
+                  Online – offline çalışabilme
+                </li>
+              </div>
+              <div className="lists">
+                <li className="font-semibold text-md inline-block">
+                  {" "}
+                  <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
+                  Uzaktan kontrol ve yönetim özelliği
+                </li>
+              </div>
+              <div className="lists">
+                <li className="font-semibold text-md inline-block">
+                  {" "}
+                  <TiTickOutline className="inline-block text-xl text-green-500 mb-2" />
+                  Türkiye’de 186 çıkış gişesine kuruldu
+                </li>
+              </div>
+            </ul>
+          </div>
+          <div className="flex flex-col items-center justify-center mx-12">
+            <img
+              src={hgs}
+              alt="im-7"
+              width={300}
+              height={400}
+              className="text-center mx-auto"
+            />
+          </div>
         </div>
 
-        <div>
+        <div className="flex justify-center items-center my-24">
+        <div className="flex flex-col items-center justify-center mx-12">
+            <img
+              src={yolcuEkran}
+              alt="im-7"
+              width={450}
+              height={600}
+              className="text-center mx-auto"
+            />
+          </div>
+          <div>
           <h1 className="text-2xl font-semibold my-4">
             Ledli Otobüs Yolcu Bilgilendirme Ekranı
           </h1>
@@ -872,9 +905,21 @@ function SmartCity() {
               </li>
             </div>
           </ul>
+          </div>
         </div>
       </div>
-    </div>
+
+      <div className="smartCityVideo flex flex-row items-center justify-center mx-12">
+        <video controls className="w-[700px] mx-12 rounded-3xl">
+          <source src={radarVideo1} type="video/mp4" />
+          Tarayıcınız video eklentisini desteklemiyor.
+        </video>
+        <video controls className="w-[700px] mx-12 rounded-3xl">
+          <source src={radarVideo2} type="video/mp4" />
+          Tarayıcınız video eklentisini desteklemiyor.
+        </video>
+      </div>
+    </motion.div>
   );
 }
 

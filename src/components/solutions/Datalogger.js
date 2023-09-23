@@ -1,6 +1,6 @@
 import datalogger1 from "./solutionsImage/datalogger1.jpg";
-import datalogger2 from "./solutionsImage/datalogger2.png";
-import datalogger3 from "./solutionsImage/datalogger3.jpg";
+// import datalogger2 from "./solutionsImage/datalogger2.png";
+// import datalogger3 from "./solutionsImage/datalogger3.jpg";
 
 import { TiTickOutline } from "react-icons/ti";
 
@@ -93,7 +93,7 @@ function Datalogger() {
         </div>
       </ul>
 
-      <div className="datalogger-image-class flex justify-around items-center">
+      {/* <div className="datalogger-image-class flex justify-around items-center">
         <div className="flex items-center justify-center my-24">
           <img
             src={datalogger2}
@@ -109,7 +109,7 @@ function Datalogger() {
             className="text-center mx-auto w-[600px] rounded-2xl"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

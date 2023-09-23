@@ -12,6 +12,7 @@ import smartStop7 from "./solutionsImage/smartStop7.png";
 import smartStop8 from "./solutionsImage/smartStop8.png";
 import smartStop9 from "./solutionsImage/smartStop9.png";
 import Slider from "react-slick";
+import { motion } from "framer-motion";
 
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -45,7 +46,10 @@ function SmartStop() {
     { lat: 40.978, lng: 27.5145, name: "Tekirdağ", category: "city" },
   ];
   return (
-    <div id="smart-stop">
+    <motion.div
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    id="smart-stop">
       <div
         id="header-smartStop"
         className="w-full bg-gradient-to-r from-blue-600 to-purple-600 p-4 flex items-center justify-center my-12"
@@ -407,7 +411,7 @@ function SmartStop() {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
